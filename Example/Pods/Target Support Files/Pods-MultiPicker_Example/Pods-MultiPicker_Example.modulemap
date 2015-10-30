@@ -1,0 +1,6 @@
+framework module Pods_MultiPicker_Example {
+  umbrella header "Pods-MultiPicker_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

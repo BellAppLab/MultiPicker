@@ -1,0 +1,6 @@
+framework module MultiPicker {
+  umbrella header "MultiPicker-umbrella.h"
+
+  export *
+  module * { export * }
+}

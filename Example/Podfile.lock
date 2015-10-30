@@ -1,0 +1,14 @@
+PODS:
+  - MultiPicker (0.1.0)
+
+DEPENDENCIES:
+  - MultiPicker (from `../`)
+
+EXTERNAL SOURCES:
+  MultiPicker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MultiPicker: 66ff383a662233ad252f2983678034a4e58b8d87
+
+COCOAPODS: 0.39.0
