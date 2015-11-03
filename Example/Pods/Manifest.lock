@@ -1,5 +1,7 @@
 PODS:
-  - MultiPicker (0.1.0)
+  - MultiPicker (0.1.0):
+    - UILoader
+  - UILoader (0.5.4)
 
 DEPENDENCIES:
   - MultiPicker (from `../`)
@@ -9,6 +11,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MultiPicker: 66ff383a662233ad252f2983678034a4e58b8d87
+  MultiPicker: 696992f5082a2b31a675088b2051c1bbd6d1aee6
+  UILoader: 4168bf1f040643d234110e6aa9e9230f46ceb72f
 
 COCOAPODS: 0.39.0

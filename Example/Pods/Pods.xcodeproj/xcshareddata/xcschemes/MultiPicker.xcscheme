@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '282FADF0D10F85E6D4EE6B3A'
+               BlueprintIdentifier = '620E80EB4307DE6C059B0451'
                BlueprintName = 'MultiPicker'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'MultiPicker.framework'>
