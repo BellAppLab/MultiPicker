@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "MultiPicker"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.summary          = "An Image Picker View Controller for iOS."
 
   s.description      = <<-DESC
@@ -22,6 +22,5 @@ An Image Picker View Controller for iOS that supports multiple images, multiple 
   s.resource = 'Pod/Assets/*.{storyboard}'
 
   s.frameworks = 'UIKit', 'Photos'
-  s.dependency 'Permissionable'
   s.dependency 'Permissionable/Photos'
 end

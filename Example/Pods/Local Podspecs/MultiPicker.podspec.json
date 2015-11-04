@@ -1,6 +1,6 @@
 {
   "name": "MultiPicker",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "summary": "An Image Picker View Controller for iOS.",
   "description": "An Image Picker View Controller for iOS that supports multiple images, multiple presentation styles, storyboards and rotation. Inspired by: https://github.com/questbeat/QBImagePicker",
   "homepage": "https://github.com/BellAppLab/MultiPicker",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/BellAppLab/MultiPicker.git",
-    "tag": "0.1.0"
+    "tag": "0.1.2"
   },
   "social_media_url": "https://twitter.com/BellAppLab",
   "platforms": {
@@ -25,9 +25,6 @@
     "Photos"
   ],
   "dependencies": {
-    "Permissionable": [
-
-    ],
     "Permissionable/Photos": [
 
     ]

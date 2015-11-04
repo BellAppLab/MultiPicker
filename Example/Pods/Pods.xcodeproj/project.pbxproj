@@ -7,49 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0644D9CF6CBFE38B47702138927DED47 /* Defines-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC778F167812F645B2FD45CBB40F4372 /* Defines-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E605EBEDEB7ED1068F5B86293F9D6E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9234663D4657E244CAB2D93F43C65B8 /* Foundation.framework */; };
-		191F9989DAC032B91AA83755C6C70799 /* Alertable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 535B92D12F3A5A62D591753D95ACCA76 /* Alertable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0644D9CF6CBFE38B47702138927DED47 /* Defines-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D690776610D1982D5F18057C684F4EAC /* Defines-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B7D422CEDF14EA31E95510BE15958C2 /* Defines.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA51799D4D3534E3F5C0047B5081E57 /* Defines.framework */; };
+		170C550CB878CF30D34F93B311313393 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F96628D4DB3DD0054384C935982BD58 /* Foundation.framework */; };
+		191F9989DAC032B91AA83755C6C70799 /* Alertable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6082875B5C7EB8FA04183940042207D3 /* Alertable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1EC31A80C8458D7309CD613402A4BED0 /* MultiPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB47F79C181E54D54D93DB0C3B708BC0 /* MultiPicker.storyboard */; };
 		1FFA7F5DCEF6018B3E1A434F6D48B633 /* MultiPickerChildren.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ADB0F8534F89BDA1E004BF82226B02 /* MultiPickerChildren.swift */; };
-		23051B83D9A91305D3C810B99F7C1E33 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBE668F7559961F553C6866EBBD60AA3 /* AVFoundation.framework */; };
-		232B908AC038B8C9962142DC6B26FF71 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C726D21DECBF2C57889A4C80F0C16C2 /* UIKit.framework */; };
-		31E08C29628B87F6A800CBD54E800BD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9234663D4657E244CAB2D93F43C65B8 /* Foundation.framework */; };
+		237BA7EBAB93200DE741B848BBFF3FB8 /* Backgroundable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FA98FA7C1B7C429B2FB4916DFC1015 /* Backgroundable.framework */; };
+		282ADFD0FA874958FC31D51A2CFA90B1 /* Alertable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 126EE64694EE3A632C3DE3AFF78D42C6 /* Alertable.framework */; };
+		2DFE96BF51B2C6009EBDFB92A32C67B5 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDCBF646B97FDC92C115B6B1EF862B4 /* Photos.framework */; };
+		31E08C29628B87F6A800CBD54E800BD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F96628D4DB3DD0054384C935982BD58 /* Foundation.framework */; };
 		3A259A8F814C4156F771E5E365579CD4 /* MultiPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0312D3A8E5545F64AB8F5C232D6C595B /* MultiPicker-dummy.m */; };
-		47D9E979193BF50EBD8C1B006D0377CA /* Defines.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B831E672ED974E629E2090E18E8E02 /* Defines.framework */; };
-		4895814337A8F84C861B93B014751207 /* Permissionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD73A26CAB731E2ACC5052C523269668 /* Permissionable.swift */; };
-		4AFCECE6019F9AEF5FAB053DE9A55E6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9234663D4657E244CAB2D93F43C65B8 /* Foundation.framework */; };
+		4895814337A8F84C861B93B014751207 /* Permissionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19345C79FA597BA1E314689C62F9BAE /* Permissionable.swift */; };
+		4AFCECE6019F9AEF5FAB053DE9A55E6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F96628D4DB3DD0054384C935982BD58 /* Foundation.framework */; };
 		54F8F5226B207DC5C8D44B72E13BB689 /* MultiPickerViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC6A685E65664A798C168598BEB1BE1 /* MultiPickerViews.swift */; };
-		5AB04ACFAAE191A34D5AC0C5E3A1DE3F /* Backgroundable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E414D01A9E06CDBAA338367DCF38C519 /* Backgroundable.swift */; };
+		5AB04ACFAAE191A34D5AC0C5E3A1DE3F /* Backgroundable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF0BCDF89A41A3733C1D816A415FC72 /* Backgroundable.swift */; };
 		60762BA897E55CBA2AE139B100D11F07 /* Pods-MultiPicker_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D4654C1B48FF4BDA32388D15BE3750 /* Pods-MultiPicker_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		65506A4EAAFC3FF0EA5E81DCD04CE72F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9234663D4657E244CAB2D93F43C65B8 /* Foundation.framework */; };
-		6AECBAB8EE5124540E3196058A1A438E /* Backgroundable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5198B8079941B0882526CF8AFFB055E2 /* Backgroundable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B8E1DDD88B5EE1A642F2985CE18FC63 /* Alertable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06BA27AA69582140BD4D0770BCF3D7BB /* Alertable.framework */; };
+		65506A4EAAFC3FF0EA5E81DCD04CE72F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F96628D4DB3DD0054384C935982BD58 /* Foundation.framework */; };
+		6AECBAB8EE5124540E3196058A1A438E /* Backgroundable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BC6F76BF29C7CCD9FC9298D3EDC1B1C /* Backgroundable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		77C2FCC91D278A43416A6AA823E8592A /* Pods-MultiPicker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EA0A7065690F7485CEF9DF4DE7F150 /* Pods-MultiPicker_Tests-dummy.m */; };
-		82637414C2FD49C855132FCAAD5781B1 /* UIViewController+Permissionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382372A4EB28AF13A95DAA3898B71AA7 /* UIViewController+Permissionable.swift */; };
-		854A83B62A53B34B78FBED1FB167FD75 /* Defines-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7CC5B9B21B1E8B900EF10EC42801D5 /* Defines-dummy.m */; };
-		8EEC0D62B0B4235C332719D94B10FB2D /* Permissionable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73962A284600A7DD7AF5072B0E0038E0 /* Permissionable-dummy.m */; };
-		96B24E74EB200619E9453A6E50723F87 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DC2E71105F46D02EFCAE87498BE2D0 /* Defines.swift */; };
-		9DC9611AF3089CE3873FE281DBE06DC1 /* Permissionable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD2D412031A25C7AF600859EA95AD9F /* Permissionable.framework */; };
-		B072552867CA02B2EF768A5F38858439 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C726D21DECBF2C57889A4C80F0C16C2 /* UIKit.framework */; };
-		B11753C9999A207858B368C284463A9D /* Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D1CEC485A25A3383123A6D58CF133E /* Alertable.swift */; };
-		B4BDDB0A6ECC947434AB9A057AEA8277 /* Backgroundable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AFFD8877ADC07801D94C8465478397 /* Backgroundable.framework */; };
-		BDD2C62A289799B69A2B3C42896A9C5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C726D21DECBF2C57889A4C80F0C16C2 /* UIKit.framework */; };
+		82637414C2FD49C855132FCAAD5781B1 /* UIViewController+Permissionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB71F3C25213E03E0B4A835C9DE4D2A /* UIViewController+Permissionable.swift */; };
+		854A83B62A53B34B78FBED1FB167FD75 /* Defines-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8D285E45937561D6CD4F48C128CF86 /* Defines-dummy.m */; };
+		8EEC0D62B0B4235C332719D94B10FB2D /* Permissionable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 873B8EE94770AF2914D54A51022B6552 /* Permissionable-dummy.m */; };
+		96B24E74EB200619E9453A6E50723F87 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFB70F11D1D62D92E7EE22A87DB9952 /* Defines.swift */; };
+		9DC9611AF3089CE3873FE281DBE06DC1 /* Permissionable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504DBBBEA05F89ACC2BB9CEA09F5946A /* Permissionable.framework */; };
+		B072552867CA02B2EF768A5F38858439 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0114ACE7C99706A73BC5203F6F51F /* UIKit.framework */; };
+		B11753C9999A207858B368C284463A9D /* Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8404AE200B8722AC81770EC3C5E74E /* Alertable.swift */; };
+		B75ABACFE96F80460085C7A765B8ED1B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0114ACE7C99706A73BC5203F6F51F /* UIKit.framework */; };
+		BDD2C62A289799B69A2B3C42896A9C5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0114ACE7C99706A73BC5203F6F51F /* UIKit.framework */; };
 		BFB1BCE88776A3C286047EB0E2E2C2C8 /* Pods-MultiPicker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1438B1C8C0571D8BF3FCC42767423170 /* Pods-MultiPicker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CA6CC857C2B5687EDB6E9F8DDD49893C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9234663D4657E244CAB2D93F43C65B8 /* Foundation.framework */; };
-		D0693D29AF69F4B5432D86E09848309E /* UIViewController+Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776A40A88387B1E51A63ED5B20B15901 /* UIViewController+Alertable.swift */; };
-		D0C066B8A533E0C4ED0A85E2FFF33511 /* Permissionable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD156A40539CA431DEF57EF4D6DA28C2 /* Permissionable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D94AEAD93A7B1018D6E00A1EF560DF82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9234663D4657E244CAB2D93F43C65B8 /* Foundation.framework */; };
-		D9E4EDF2CF022F297594519E24D58297 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D6B1374EE40D0463694331AEF6FF92 /* Photos.framework */; };
+		CA6CC857C2B5687EDB6E9F8DDD49893C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F96628D4DB3DD0054384C935982BD58 /* Foundation.framework */; };
+		D0693D29AF69F4B5432D86E09848309E /* UIViewController+Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5AB4944702C14EFDBCF4C1CBA920F0 /* UIViewController+Alertable.swift */; };
+		D0C066B8A533E0C4ED0A85E2FFF33511 /* Permissionable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 783D73B16857D3B2885E5EED33726D64 /* Permissionable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D94AEAD93A7B1018D6E00A1EF560DF82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F96628D4DB3DD0054384C935982BD58 /* Foundation.framework */; };
 		DCEC6ECC4A998F945E0293CACE0DC63D /* Pods-MultiPicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D662B23F33CF096E5891D4D066A74F /* Pods-MultiPicker_Example-dummy.m */; };
-		E007C2C62721577393A4DC12AA1196E8 /* Backgroundable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB49AF45BF35A347A169E3BC89E53BEC /* Backgroundable-dummy.m */; };
+		E007C2C62721577393A4DC12AA1196E8 /* Backgroundable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B9DC51EC8187AAC4192C56B05825AF06 /* Backgroundable-dummy.m */; };
 		E1B0C2ECBC9FB30BDCAF630B10B10977 /* MultiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874D2B1A1C612782402628529E084BA4 /* MultiPicker.swift */; };
 		E26C64BC08AA46985B35B78618A7F59D /* MultiPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AD7572A9984AF44E630F2BC23EDA033 /* MultiPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EDCB51DCDB943585237ACEC2D3DB9E85 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D6B1374EE40D0463694331AEF6FF92 /* Photos.framework */; };
-		EFF4A37E7E8E44CE777D6F8B7BF5DC24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9234663D4657E244CAB2D93F43C65B8 /* Foundation.framework */; };
-		F8B4299B5BE8290C79697E0454ED9DAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C726D21DECBF2C57889A4C80F0C16C2 /* UIKit.framework */; };
-		F8EF4FC45CE95776993CFD52009DE966 /* Alertable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF3D34A20ABC6F2CE49D3AC418BFC69 /* Alertable-dummy.m */; };
-		FB7F65665DA28E418DE4225628ED2897 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C726D21DECBF2C57889A4C80F0C16C2 /* UIKit.framework */; };
+		EDCB51DCDB943585237ACEC2D3DB9E85 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDCBF646B97FDC92C115B6B1EF862B4 /* Photos.framework */; };
+		EFF4A37E7E8E44CE777D6F8B7BF5DC24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F96628D4DB3DD0054384C935982BD58 /* Foundation.framework */; };
+		F8B4299B5BE8290C79697E0454ED9DAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0114ACE7C99706A73BC5203F6F51F /* UIKit.framework */; };
+		F8EF4FC45CE95776993CFD52009DE966 /* Alertable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A7D50AE554F0DD053594350B5B6CD8 /* Alertable-dummy.m */; };
+		FB7F65665DA28E418DE4225628ED2897 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F0114ACE7C99706A73BC5203F6F51F /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,82 +153,81 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		003927CB736CE343840240A00F56D998 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01F6748C0A2917C6AFCA2D38CEA2C119 /* Pods-MultiPicker_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MultiPicker_Example-resources.sh"; sourceTree = "<group>"; };
 		0312D3A8E5545F64AB8F5C232D6C595B /* MultiPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MultiPicker-dummy.m"; sourceTree = "<group>"; };
-		03AFFD8877ADC07801D94C8465478397 /* Backgroundable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Backgroundable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		06BA27AA69582140BD4D0770BCF3D7BB /* Alertable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alertable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C726D21DECBF2C57889A4C80F0C16C2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		04FA98FA7C1B7C429B2FB4916DFC1015 /* Backgroundable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Backgroundable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0773369A26495686C8E302B140F2458B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A395960AF5C6AED4C6A6443B59C64C1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		107C1792AB24716536100B7BAC33355E /* Pods-MultiPicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MultiPicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		115A89D670C55894DB49F0279269E5CF /* MultiPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MultiPicker-prefix.pch"; sourceTree = "<group>"; };
+		126EE64694EE3A632C3DE3AFF78D42C6 /* Alertable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alertable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1438B1C8C0571D8BF3FCC42767423170 /* Pods-MultiPicker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MultiPicker_Example-umbrella.h"; sourceTree = "<group>"; };
 		1456356A4D5C0443AF5CEF81D6969E60 /* Pods-MultiPicker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MultiPicker_Example-frameworks.sh"; sourceTree = "<group>"; };
+		1A4BB48DC2DA975FE11796C941076A47 /* Alertable.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alertable.xcconfig; sourceTree = "<group>"; };
+		1AA51799D4D3534E3F5C0047B5081E57 /* Defines.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Defines.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DCE008B3B2D08D134B37DC91865ED20 /* Alertable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alertable-prefix.pch"; sourceTree = "<group>"; };
 		1FE0B9C162B9502EA041AE7BF6AD4B70 /* Pods-MultiPicker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MultiPicker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		20B16776F8B5816676626AE4005BB5FA /* Permissionable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Permissionable-prefix.pch"; sourceTree = "<group>"; };
-		20D1CEC485A25A3383123A6D58CF133E /* Alertable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alertable.swift; path = Pod/Classes/Alertable.swift; sourceTree = "<group>"; };
+		26E730063375470F585CE860EF629D02 /* Permissionable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Permissionable.modulemap; sourceTree = "<group>"; };
+		27A7D50AE554F0DD053594350B5B6CD8 /* Alertable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alertable-dummy.m"; sourceTree = "<group>"; };
 		294B6526118E07BC6A9097A0CDA5BD87 /* Alertable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alertable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B52E189F31439FA485AA9C010CE3DDF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		339A1AA0960713160406225C69DCDA67 /* Alertable.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alertable.xcconfig; sourceTree = "<group>"; };
-		382372A4EB28AF13A95DAA3898B71AA7 /* UIViewController+Permissionable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Permissionable.swift"; path = "Pod/Classes/UIViewController+Permissionable.swift"; sourceTree = "<group>"; };
+		2A5D33E4E66FC9A9598C7A6562A767C3 /* Backgroundable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Backgroundable.modulemap; sourceTree = "<group>"; };
+		2AF0BCDF89A41A3733C1D816A415FC72 /* Backgroundable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Backgroundable.swift; path = Pod/Classes/Backgroundable.swift; sourceTree = "<group>"; };
+		2BC6F76BF29C7CCD9FC9298D3EDC1B1C /* Backgroundable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Backgroundable-umbrella.h"; sourceTree = "<group>"; };
+		2FDCBF646B97FDC92C115B6B1EF862B4 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
 		3974771AA5763E7289C2257EBB8D6550 /* Pods-MultiPicker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MultiPicker_Example.modulemap"; sourceTree = "<group>"; };
-		4D4F34C8A999E88AEA8F77A2F0A97A37 /* Permissionable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Permissionable.modulemap; sourceTree = "<group>"; };
-		5198B8079941B0882526CF8AFFB055E2 /* Backgroundable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Backgroundable-umbrella.h"; sourceTree = "<group>"; };
-		535B92D12F3A5A62D591753D95ACCA76 /* Alertable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alertable-umbrella.h"; sourceTree = "<group>"; };
-		54EEB4992CDAAD0C968C191C45F4DFD1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A8D285E45937561D6CD4F48C128CF86 /* Defines-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Defines-dummy.m"; sourceTree = "<group>"; };
+		504DBBBEA05F89ACC2BB9CEA09F5946A /* Permissionable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Permissionable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5720E1CFBD0ED144AB16B9855EDEE680 /* Pods-MultiPicker_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MultiPicker_Tests-resources.sh"; sourceTree = "<group>"; };
 		5BA64EA357F8D254C66FB1FA18ECC50E /* MultiPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MultiPicker.modulemap; sourceTree = "<group>"; };
-		5E7CC5B9B21B1E8B900EF10EC42801D5 /* Defines-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Defines-dummy.m"; sourceTree = "<group>"; };
-		5FA9F91F6AB171425FE208313F7AFA5A /* Defines-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Defines-prefix.pch"; sourceTree = "<group>"; };
+		5C1635997DE4F7AA932E18C5E89EDA0F /* Backgroundable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Backgroundable-prefix.pch"; sourceTree = "<group>"; };
+		6082875B5C7EB8FA04183940042207D3 /* Alertable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alertable-umbrella.h"; sourceTree = "<group>"; };
+		60F4CADA628838E71F9178B2337B37A7 /* Permissionable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Permissionable-prefix.pch"; sourceTree = "<group>"; };
 		60F51CE2DBB22326562DBFED92AE2378 /* Pods-MultiPicker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MultiPicker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		62E9F5F7039813506D7C19E8B28596E4 /* MultiPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultiPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A4A7E8C95C7784B193ACD4ACD7E55B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		68809EDFED3F91AACCBE37810543A272 /* Backgroundable.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Backgroundable.xcconfig; sourceTree = "<group>"; };
 		6B8671E8DFB3D4166F4E43A0A6C9708E /* Pods-MultiPicker_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MultiPicker_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		6FF3D34A20ABC6F2CE49D3AC418BFC69 /* Alertable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alertable-dummy.m"; sourceTree = "<group>"; };
-		73962A284600A7DD7AF5072B0E0038E0 /* Permissionable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Permissionable-dummy.m"; sourceTree = "<group>"; };
-		776A40A88387B1E51A63ED5B20B15901 /* UIViewController+Alertable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Alertable.swift"; path = "Pod/Classes/UIViewController+Alertable.swift"; sourceTree = "<group>"; };
+		6DF803EA082B806E2CF9C4F1F4B1DB68 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7810E1F77329CDC4ADC00F9117919800 /* Backgroundable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Backgroundable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		797A5C85939B3196B71B8C7DE84D8633 /* Alertable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alertable.modulemap; sourceTree = "<group>"; };
-		7987C120C60ECA56B5AC41E9D2BDE9C6 /* Alertable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alertable-prefix.pch"; sourceTree = "<group>"; };
-		7B2CE3458BA5E033C4B240F321FAAE89 /* Defines.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Defines.modulemap; sourceTree = "<group>"; };
-		7CD2D412031A25C7AF600859EA95AD9F /* Permissionable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Permissionable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		783D73B16857D3B2885E5EED33726D64 /* Permissionable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Permissionable-umbrella.h"; sourceTree = "<group>"; };
+		7F96628D4DB3DD0054384C935982BD58 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		80F48DB441913E1EF93A989F2F741435 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8193D7344595092458E33C2026FB8B31 /* Pods-MultiPicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MultiPicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		81DC7AEBFA8424BA2F7948E577305A93 /* Defines.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Defines.xcconfig; sourceTree = "<group>"; };
 		84809D725A81B8DAB033F1FFD0D9948B /* Pods_MultiPicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiPicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D4654C1B48FF4BDA32388D15BE3750 /* Pods-MultiPicker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MultiPicker_Tests-umbrella.h"; sourceTree = "<group>"; };
+		873B8EE94770AF2914D54A51022B6552 /* Permissionable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Permissionable-dummy.m"; sourceTree = "<group>"; };
 		874D2B1A1C612782402628529E084BA4 /* MultiPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MultiPicker.swift; sourceTree = "<group>"; };
-		89F391EF5AC2DE8D09C5BD32C20459EA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		896142F8326EA81CC00620B72A4126B2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AD7572A9984AF44E630F2BC23EDA033 /* MultiPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MultiPicker-umbrella.h"; sourceTree = "<group>"; };
-		8EFAF720509FF939C94A054E31DB6586 /* Defines.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Defines.xcconfig; sourceTree = "<group>"; };
-		943A61CF7CA6AB8EC1313F5A9F17F4EE /* Backgroundable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Backgroundable.modulemap; sourceTree = "<group>"; };
+		8EB71F3C25213E03E0B4A835C9DE4D2A /* UIViewController+Permissionable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Permissionable.swift"; path = "Pod/Classes/UIViewController+Permissionable.swift"; sourceTree = "<group>"; };
+		9057DC34201100E64036BF1065CB9A2A /* Defines.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Defines.modulemap; sourceTree = "<group>"; };
+		927B184674948AD5FE72E3B2DE9BFC22 /* Backgroundable.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Backgroundable.xcconfig; sourceTree = "<group>"; };
 		95742098D81BE4090E444E845C0B77B2 /* Pods-MultiPicker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MultiPicker_Tests.modulemap"; sourceTree = "<group>"; };
-		98D8A32E2D12EC43075C2902B4100EE2 /* Backgroundable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Backgroundable-prefix.pch"; sourceTree = "<group>"; };
-		A2DC2E71105F46D02EFCAE87498BE2D0 /* Defines.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Defines.swift; path = Pod/Classes/Defines.swift; sourceTree = "<group>"; };
-		A471B703F59AE91260642E4F45F1D88D /* Permissionable.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Permissionable.xcconfig; sourceTree = "<group>"; };
 		A4FA7662DCB7992D85FE39CD3E83BB11 /* Pods-MultiPicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MultiPicker_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A635A82694F71671A902005928E2E8A8 /* Pods-MultiPicker_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MultiPicker_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		AA36D22781160C84C40E180DD4DB5DA8 /* Pods_MultiPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiPicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0ADB0F8534F89BDA1E004BF82226B02 /* MultiPickerChildren.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MultiPickerChildren.swift; sourceTree = "<group>"; };
+		B9DC51EC8187AAC4192C56B05825AF06 /* Backgroundable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Backgroundable-dummy.m"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BDA0E589DDDA80E2A5B6739619ADAC65 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF7F37163CBC514082C2D712112A23F9 /* MultiPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MultiPicker.xcconfig; sourceTree = "<group>"; };
 		C686CAF9F258D150661A4D3BC0CB8E26 /* Pods-MultiPicker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MultiPicker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C7EA0A7065690F7485CEF9DF4DE7F150 /* Pods-MultiPicker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MultiPicker_Tests-dummy.m"; sourceTree = "<group>"; };
-		C9D6B1374EE40D0463694331AEF6FF92 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
-		CC778F167812F645B2FD45CBB40F4372 /* Defines-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Defines-umbrella.h"; sourceTree = "<group>"; };
-		CD73A26CAB731E2ACC5052C523269668 /* Permissionable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Permissionable.swift; path = Pod/Classes/Permissionable.swift; sourceTree = "<group>"; };
-		DB49AF45BF35A347A169E3BC89E53BEC /* Backgroundable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Backgroundable-dummy.m"; sourceTree = "<group>"; };
+		D690776610D1982D5F18057C684F4EAC /* Defines-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Defines-umbrella.h"; sourceTree = "<group>"; };
+		D99214386F53FD5A2F9FCED6018930E9 /* Permissionable.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Permissionable.xcconfig; sourceTree = "<group>"; };
+		DBFB70F11D1D62D92E7EE22A87DB9952 /* Defines.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Defines.swift; path = Pod/Classes/Defines.swift; sourceTree = "<group>"; };
 		DC64F09028E7FCE5F466362DFB7287CF /* Defines.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Defines.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E414D01A9E06CDBAA338367DCF38C519 /* Backgroundable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Backgroundable.swift; path = Pod/Classes/Backgroundable.swift; sourceTree = "<group>"; };
-		E4B831E672ED974E629E2090E18E8E02 /* Defines.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Defines.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9234663D4657E244CAB2D93F43C65B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DCD489E02E6E8078284513338E1F4A85 /* Alertable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alertable.modulemap; sourceTree = "<group>"; };
+		E19345C79FA597BA1E314689C62F9BAE /* Permissionable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Permissionable.swift; path = Pod/Classes/Permissionable.swift; sourceTree = "<group>"; };
+		EA8404AE200B8722AC81770EC3C5E74E /* Alertable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alertable.swift; path = Pod/Classes/Alertable.swift; sourceTree = "<group>"; };
+		ED5AB4944702C14EFDBCF4C1CBA920F0 /* UIViewController+Alertable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Alertable.swift"; path = "Pod/Classes/UIViewController+Alertable.swift"; sourceTree = "<group>"; };
+		ED951DCA7DD969CB48C0246D36DAB12D /* Defines-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Defines-prefix.pch"; sourceTree = "<group>"; };
 		EE5CEB56E209F1423491D4B7B44E8074 /* Permissionable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Permissionable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D662B23F33CF096E5891D4D066A74F /* Pods-MultiPicker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MultiPicker_Example-dummy.m"; sourceTree = "<group>"; };
+		F8F0114ACE7C99706A73BC5203F6F51F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		F9E9182E6240E9D9A4AE4045139D284A /* Pods-MultiPicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MultiPicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FB47F79C181E54D54D93DB0C3B708BC0 /* MultiPicker.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = MultiPicker.storyboard; sourceTree = "<group>"; };
 		FBC6A685E65664A798C168598BEB1BE1 /* MultiPickerViews.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MultiPickerViews.swift; sourceTree = "<group>"; };
-		FBE668F7559961F553C6866EBBD60AA3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		FD156A40539CA431DEF57EF4D6DA28C2 /* Permissionable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Permissionable-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +246,19 @@
 			files = (
 				65506A4EAAFC3FF0EA5E81DCD04CE72F /* Foundation.framework in Frameworks */,
 				FB7F65665DA28E418DE4225628ED2897 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A87F5487EA54706E91731B9CD853D9CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				282ADFD0FA874958FC31D51A2CFA90B1 /* Alertable.framework in Frameworks */,
+				237BA7EBAB93200DE741B848BBFF3FB8 /* Backgroundable.framework in Frameworks */,
+				0B7D422CEDF14EA31E95510BE15958C2 /* Defines.framework in Frameworks */,
+				170C550CB878CF30D34F93B311313393 /* Foundation.framework in Frameworks */,
+				2DFE96BF51B2C6009EBDFB92A32C67B5 /* Photos.framework in Frameworks */,
+				B75ABACFE96F80460085C7A765B8ED1B /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,20 +298,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FFE79F1615C147018B5BAA1448E36341 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6B8E1DDD88B5EE1A642F2985CE18FC63 /* Alertable.framework in Frameworks */,
-				23051B83D9A91305D3C810B99F7C1E33 /* AVFoundation.framework in Frameworks */,
-				B4BDDB0A6ECC947434AB9A057AEA8277 /* Backgroundable.framework in Frameworks */,
-				47D9E979193BF50EBD8C1B006D0377CA /* Defines.framework in Frameworks */,
-				0E605EBEDEB7ED1068F5B86293F9D6E3 /* Foundation.framework in Frameworks */,
-				D9E4EDF2CF022F297594519E24D58297 /* Photos.framework in Frameworks */,
-				232B908AC038B8C9962142DC6B26FF71 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -322,6 +319,43 @@
 			path = "Target Support Files/Pods-MultiPicker_Example";
 			sourceTree = "<group>";
 		};
+		04A822866F149B23843CC075BC3E57DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				126EE64694EE3A632C3DE3AFF78D42C6 /* Alertable.framework */,
+				04FA98FA7C1B7C429B2FB4916DFC1015 /* Backgroundable.framework */,
+				1AA51799D4D3534E3F5C0047B5081E57 /* Defines.framework */,
+				504DBBBEA05F89ACC2BB9CEA09F5946A /* Permissionable.framework */,
+				A4C2E6A7680A19449E8E6FCD6C7EEB11 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		07720807752519A4907613FD6D584888 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89A13670611CD908D453EBA1B34CD188 /* Alertable */,
+				B0DD1D9BB0412C38EFB3154FCC30823F /* Backgroundable */,
+				4FC8DC835116F5298469BB2B796B657F /* Defines */,
+				671EC5B39F04B12A6BC9F4BF97BFD9A0 /* Permissionable */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1E57F947D9C66F84D9A03F9A20E12DCD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCD489E02E6E8078284513338E1F4A85 /* Alertable.modulemap */,
+				1A4BB48DC2DA975FE11796C941076A47 /* Alertable.xcconfig */,
+				27A7D50AE554F0DD053594350B5B6CD8 /* Alertable-dummy.m */,
+				1DCE008B3B2D08D134B37DC91865ED20 /* Alertable-prefix.pch */,
+				6082875B5C7EB8FA04183940042207D3 /* Alertable-umbrella.h */,
+				0A395960AF5C6AED4C6A6443B59C64C1 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alertable";
+			sourceTree = "<group>";
+		};
 		2630AB56E4CE714DACBDC4203F74DB3E /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,16 +365,13 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		3312E2FC541A5CE6F67A3C2986784625 /* Frameworks */ = {
+		2F9B8F0D64C57661FB97DCB0F7798ADC /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				06BA27AA69582140BD4D0770BCF3D7BB /* Alertable.framework */,
-				03AFFD8877ADC07801D94C8465478397 /* Backgroundable.framework */,
-				E4B831E672ED974E629E2090E18E8E02 /* Defines.framework */,
-				7CD2D412031A25C7AF600859EA95AD9F /* Permissionable.framework */,
-				CA0179D87210276263A6D3AA0EAE8D25 /* iOS */,
+				E19345C79FA597BA1E314689C62F9BAE /* Permissionable.swift */,
+				8EB71F3C25213E03E0B4A835C9DE4D2A /* UIViewController+Permissionable.swift */,
 			);
-			name = Frameworks;
+			name = Core;
 			sourceTree = "<group>";
 		};
 		3B8BA4A61EF309BB98A4F84311912E4B /* Classes */ = {
@@ -351,16 +382,6 @@
 				FBC6A685E65664A798C168598BEB1BE1 /* MultiPickerViews.swift */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		3B94523F59159725A69C1229155A724B /* Alertable */ = {
-			isa = PBXGroup;
-			children = (
-				20D1CEC485A25A3383123A6D58CF133E /* Alertable.swift */,
-				776A40A88387B1E51A63ED5B20B15901 /* UIViewController+Alertable.swift */,
-				AE7025DA29730A5E1595377252C64967 /* Support Files */,
-			);
-			path = Alertable;
 			sourceTree = "<group>";
 		};
 		40714471733D7FD2A706207979458319 /* Resources */ = {
@@ -382,14 +403,27 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		4A2DDAFAA82E8C7F9D06D3E2C07E618B /* Permissionable */ = {
+		4A425A9297BF9AC2B78762A68E072396 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CD73A26CAB731E2ACC5052C523269668 /* Permissionable.swift */,
-				382372A4EB28AF13A95DAA3898B71AA7 /* UIViewController+Permissionable.swift */,
-				581FC46E4311A1BB656D36F4CAC035E0 /* Support Files */,
+				0773369A26495686C8E302B140F2458B /* Info.plist */,
+				26E730063375470F585CE860EF629D02 /* Permissionable.modulemap */,
+				D99214386F53FD5A2F9FCED6018930E9 /* Permissionable.xcconfig */,
+				873B8EE94770AF2914D54A51022B6552 /* Permissionable-dummy.m */,
+				60F4CADA628838E71F9178B2337B37A7 /* Permissionable-prefix.pch */,
+				783D73B16857D3B2885E5EED33726D64 /* Permissionable-umbrella.h */,
 			);
-			path = Permissionable;
+			name = "Support Files";
+			path = "../Target Support Files/Permissionable";
+			sourceTree = "<group>";
+		};
+		4FC8DC835116F5298469BB2B796B657F /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				DBFB70F11D1D62D92E7EE22A87DB9952 /* Defines.swift */,
+				6F0BC04E149B01281FB43426A8C3B6FC /* Support Files */,
+			);
+			path = Defines;
 			sourceTree = "<group>";
 		};
 		5201FB164F66814FE953BF160AA9577A /* Pod */ = {
@@ -400,32 +434,27 @@
 			path = Pod;
 			sourceTree = "<group>";
 		};
-		581FC46E4311A1BB656D36F4CAC035E0 /* Support Files */ = {
+		5BEA7138244D7D094D93CC3A5E511349 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				89F391EF5AC2DE8D09C5BD32C20459EA /* Info.plist */,
-				4D4F34C8A999E88AEA8F77A2F0A97A37 /* Permissionable.modulemap */,
-				A471B703F59AE91260642E4F45F1D88D /* Permissionable.xcconfig */,
-				73962A284600A7DD7AF5072B0E0038E0 /* Permissionable-dummy.m */,
-				20B16776F8B5816676626AE4005BB5FA /* Permissionable-prefix.pch */,
-				FD156A40539CA431DEF57EF4D6DA28C2 /* Permissionable-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Permissionable";
-			sourceTree = "<group>";
-		};
-		68EB20629D713CCD414FD4CD11F4DBD6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				943A61CF7CA6AB8EC1313F5A9F17F4EE /* Backgroundable.modulemap */,
-				68809EDFED3F91AACCBE37810543A272 /* Backgroundable.xcconfig */,
-				DB49AF45BF35A347A169E3BC89E53BEC /* Backgroundable-dummy.m */,
-				98D8A32E2D12EC43075C2902B4100EE2 /* Backgroundable-prefix.pch */,
-				5198B8079941B0882526CF8AFFB055E2 /* Backgroundable-umbrella.h */,
-				54EEB4992CDAAD0C968C191C45F4DFD1 /* Info.plist */,
+				2A5D33E4E66FC9A9598C7A6562A767C3 /* Backgroundable.modulemap */,
+				927B184674948AD5FE72E3B2DE9BFC22 /* Backgroundable.xcconfig */,
+				B9DC51EC8187AAC4192C56B05825AF06 /* Backgroundable-dummy.m */,
+				5C1635997DE4F7AA932E18C5E89EDA0F /* Backgroundable-prefix.pch */,
+				2BC6F76BF29C7CCD9FC9298D3EDC1B1C /* Backgroundable-umbrella.h */,
+				896142F8326EA81CC00620B72A4126B2 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Backgroundable";
+			sourceTree = "<group>";
+		};
+		671EC5B39F04B12A6BC9F4BF97BFD9A0 /* Permissionable */ = {
+			isa = PBXGroup;
+			children = (
+				2F9B8F0D64C57661FB97DCB0F7798ADC /* Core */,
+				4A425A9297BF9AC2B78762A68E072396 /* Support Files */,
+			);
+			path = Permissionable;
 			sourceTree = "<group>";
 		};
 		6D5FF4BBCA5A7DF8C0B45E3641260AE6 /* Products */ = {
@@ -440,6 +469,20 @@
 				84809D725A81B8DAB033F1FFD0D9948B /* Pods_MultiPicker_Tests.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6F0BC04E149B01281FB43426A8C3B6FC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9057DC34201100E64036BF1065CB9A2A /* Defines.modulemap */,
+				81DC7AEBFA8424BA2F7948E577305A93 /* Defines.xcconfig */,
+				3A8D285E45937561D6CD4F48C128CF86 /* Defines-dummy.m */,
+				ED951DCA7DD969CB48C0246D36DAB12D /* Defines-prefix.pch */,
+				D690776610D1982D5F18057C684F4EAC /* Defines-umbrella.h */,
+				6DF803EA082B806E2CF9C4F1F4B1DB68 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Defines";
 			sourceTree = "<group>";
 		};
 		75D2C7EAD93A88E21A42E81968B5F0FD /* Pods-MultiPicker_Tests */ = {
@@ -465,43 +508,40 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				B6A7EDD8781F3F5F820E2448FB75DF94 /* Development Pods */,
-				3312E2FC541A5CE6F67A3C2986784625 /* Frameworks */,
-				C29597753F16203B42A9FCEA161E9BAC /* Pods */,
+				04A822866F149B23843CC075BC3E57DD /* Frameworks */,
+				07720807752519A4907613FD6D584888 /* Pods */,
 				6D5FF4BBCA5A7DF8C0B45E3641260AE6 /* Products */,
 				2630AB56E4CE714DACBDC4203F74DB3E /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		7F1AB8BCF0EAD4A9D120689B46CFC8CE /* Defines */ = {
+		89A13670611CD908D453EBA1B34CD188 /* Alertable */ = {
 			isa = PBXGroup;
 			children = (
-				A2DC2E71105F46D02EFCAE87498BE2D0 /* Defines.swift */,
-				B7892F8397ABEC1992EDB8ADE200032F /* Support Files */,
+				EA8404AE200B8722AC81770EC3C5E74E /* Alertable.swift */,
+				ED5AB4944702C14EFDBCF4C1CBA920F0 /* UIViewController+Alertable.swift */,
+				1E57F947D9C66F84D9A03F9A20E12DCD /* Support Files */,
 			);
-			path = Defines;
+			path = Alertable;
 			sourceTree = "<group>";
 		};
-		8BD085792A72D5C1CDD24A32A2D6A967 /* Backgroundable */ = {
+		A4C2E6A7680A19449E8E6FCD6C7EEB11 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				E414D01A9E06CDBAA338367DCF38C519 /* Backgroundable.swift */,
-				68EB20629D713CCD414FD4CD11F4DBD6 /* Support Files */,
+				7F96628D4DB3DD0054384C935982BD58 /* Foundation.framework */,
+				2FDCBF646B97FDC92C115B6B1EF862B4 /* Photos.framework */,
+				F8F0114ACE7C99706A73BC5203F6F51F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B0DD1D9BB0412C38EFB3154FCC30823F /* Backgroundable */ = {
+			isa = PBXGroup;
+			children = (
+				2AF0BCDF89A41A3733C1D816A415FC72 /* Backgroundable.swift */,
+				5BEA7138244D7D094D93CC3A5E511349 /* Support Files */,
 			);
 			path = Backgroundable;
-			sourceTree = "<group>";
-		};
-		AE7025DA29730A5E1595377252C64967 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				797A5C85939B3196B71B8C7DE84D8633 /* Alertable.modulemap */,
-				339A1AA0960713160406225C69DCDA67 /* Alertable.xcconfig */,
-				6FF3D34A20ABC6F2CE49D3AC418BFC69 /* Alertable-dummy.m */,
-				7987C120C60ECA56B5AC41E9D2BDE9C6 /* Alertable-prefix.pch */,
-				535B92D12F3A5A62D591753D95ACCA76 /* Alertable-umbrella.h */,
-				003927CB736CE343840240A00F56D998 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Alertable";
 			sourceTree = "<group>";
 		};
 		B6A7EDD8781F3F5F820E2448FB75DF94 /* Development Pods */ = {
@@ -512,37 +552,12 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		B7892F8397ABEC1992EDB8ADE200032F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7B2CE3458BA5E033C4B240F321FAAE89 /* Defines.modulemap */,
-				8EFAF720509FF939C94A054E31DB6586 /* Defines.xcconfig */,
-				5E7CC5B9B21B1E8B900EF10EC42801D5 /* Defines-dummy.m */,
-				5FA9F91F6AB171425FE208313F7AFA5A /* Defines-prefix.pch */,
-				CC778F167812F645B2FD45CBB40F4372 /* Defines-umbrella.h */,
-				2B52E189F31439FA485AA9C010CE3DDF /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Defines";
-			sourceTree = "<group>";
-		};
 		C21C86FA90CC341EDE1E3C1791659767 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
 				FB47F79C181E54D54D93DB0C3B708BC0 /* MultiPicker.storyboard */,
 			);
 			path = Assets;
-			sourceTree = "<group>";
-		};
-		C29597753F16203B42A9FCEA161E9BAC /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3B94523F59159725A69C1229155A724B /* Alertable */,
-				8BD085792A72D5C1CDD24A32A2D6A967 /* Backgroundable */,
-				7F1AB8BCF0EAD4A9D120689B46CFC8CE /* Defines */,
-				4A2DDAFAA82E8C7F9D06D3E2C07E618B /* Permissionable */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		C9DC0ED2856A66BD91C1DE3ED8FBADB1 /* Support Files */ = {
@@ -557,17 +572,6 @@
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/MultiPicker";
-			sourceTree = "<group>";
-		};
-		CA0179D87210276263A6D3AA0EAE8D25 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				FBE668F7559961F553C6866EBBD60AA3 /* AVFoundation.framework */,
-				E9234663D4657E244CAB2D93F43C65B8 /* Foundation.framework */,
-				C9D6B1374EE40D0463694331AEF6FF92 /* Photos.framework */,
-				0C726D21DECBF2C57889A4C80F0C16C2 /* UIKit.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		E0811B0A95EAE3DD21DDCBFFEEB039ED /* Pod */ = {
@@ -742,7 +746,7 @@
 			buildConfigurationList = 9C6E9C608995CE8D4926113D9B15603C /* Build configuration list for PBXNativeTarget "Permissionable" */;
 			buildPhases = (
 				33B55F181A87D5EE3AF31DDF964C07F8 /* Sources */,
-				FFE79F1615C147018B5BAA1448E36341 /* Frameworks */,
+				A87F5487EA54706E91731B9CD853D9CF /* Frameworks */,
 				E925483844F1A9B8A36F23E2DC705ADE /* Headers */,
 			);
 			buildRules = (
@@ -975,7 +979,7 @@
 /* Begin XCBuildConfiguration section */
 		0562796293F5101FE68620851A39EFBB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68809EDFED3F91AACCBE37810543A272 /* Backgroundable.xcconfig */;
+			baseConfigurationReference = 927B184674948AD5FE72E3B2DE9BFC22 /* Backgroundable.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1033,7 +1037,7 @@
 		};
 		1FA00672D8C9D3C1B91D1CD052E5EACC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8EFAF720509FF939C94A054E31DB6586 /* Defines.xcconfig */;
+			baseConfigurationReference = 81DC7AEBFA8424BA2F7948E577305A93 /* Defines.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1133,7 +1137,7 @@
 		};
 		76DD08960C22F750D31DABDE1FA3A06A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A471B703F59AE91260642E4F45F1D88D /* Permissionable.xcconfig */;
+			baseConfigurationReference = D99214386F53FD5A2F9FCED6018930E9 /* Permissionable.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1160,7 +1164,7 @@
 		};
 		AEEC7F2DB609684A5164EB019D4C9644 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A471B703F59AE91260642E4F45F1D88D /* Permissionable.xcconfig */;
+			baseConfigurationReference = D99214386F53FD5A2F9FCED6018930E9 /* Permissionable.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1215,7 +1219,7 @@
 		};
 		BD77F73B8ABDA2B4EF0E2141B804F90B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68809EDFED3F91AACCBE37810543A272 /* Backgroundable.xcconfig */;
+			baseConfigurationReference = 927B184674948AD5FE72E3B2DE9BFC22 /* Backgroundable.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1302,7 +1306,7 @@
 		};
 		D5B474EF50485A275DB0AD3CDC1763E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 339A1AA0960713160406225C69DCDA67 /* Alertable.xcconfig */;
+			baseConfigurationReference = 1A4BB48DC2DA975FE11796C941076A47 /* Alertable.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1330,7 +1334,7 @@
 		};
 		D64BAAC527B18D54553F4F2E74E16860 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 339A1AA0960713160406225C69DCDA67 /* Alertable.xcconfig */;
+			baseConfigurationReference = 1A4BB48DC2DA975FE11796C941076A47 /* Alertable.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1387,7 +1391,7 @@
 		};
 		D7A816DDAAED2A3AC7970E648FE2E0EF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8EFAF720509FF939C94A054E31DB6586 /* Defines.xcconfig */;
+			baseConfigurationReference = 81DC7AEBFA8424BA2F7948E577305A93 /* Defines.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
