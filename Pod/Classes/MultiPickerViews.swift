@@ -1,6 +1,5 @@
 import UIKit
 import Photos
-import UILoader
 
 
 //MARK: - Cells
@@ -42,9 +41,6 @@ class GridCell: UICollectionViewCell
     
     @IBOutlet weak var selectedView: Checkmark?
     @IBOutlet weak var imageView: ListImageView!
-    
-    @IBOutlet weak var spinningThing: UIActivityIndicatorView?
-    var loader: UILoader?
     
     override var selected: Bool {
         get {
