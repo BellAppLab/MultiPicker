@@ -7,166 +7,297 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01107274AA8F7A249CBE31CE255B62DA /* MultiPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0312D3A8E5545F64AB8F5C232D6C595B /* MultiPicker-dummy.m */; };
-		11A67DA62571C6A01278BDF6AE9D3799 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49072C62DF4D477AC56D47D6EBC24C9E /* Foundation.framework */; };
-		2022F5DF09413A1A938F827012D142EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 608C9115552D971F3805182131987700 /* UIKit.framework */; };
-		25B68729A9BE1A4AFA02D4EAA131A2F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49072C62DF4D477AC56D47D6EBC24C9E /* Foundation.framework */; };
-		287ED9FD3C76C931F4D9E45A6BD4A6C9 /* Pods-MultiPicker_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D4654C1B48FF4BDA32388D15BE3750 /* Pods-MultiPicker_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		293E11319C512FF0D282144E36A7CD82 /* MultiPickerViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC6A685E65664A798C168598BEB1BE1 /* MultiPickerViews.swift */; };
-		2E835ECE1B9F7691DE4329971CFDE965 /* MultiPickerChildren.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ADB0F8534F89BDA1E004BF82226B02 /* MultiPickerChildren.swift */; };
-		35EBC6AE2C515C5D33EC3B632D65A7C0 /* UILoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF2A979DA806B99C0F8308AA4CB5B28 /* UILoader.framework */; };
-		38EE0BF7B40FD283A489DE36C299A0DF /* MultiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874D2B1A1C612782402628529E084BA4 /* MultiPicker.swift */; };
-		50A624A04A4A61008EACC0498F7B1CB0 /* MultiPicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AAD0540398E0DE263A2BAF8946811AA5 /* MultiPicker.bundle */; };
-		520D3BB83AE23D743AC9D93F5CC1A326 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 608C9115552D971F3805182131987700 /* UIKit.framework */; };
-		682E6BADCB5E53941859DA4F092A8891 /* Pods-MultiPicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D662B23F33CF096E5891D4D066A74F /* Pods-MultiPicker_Example-dummy.m */; };
-		81E33A84CFEE765493552927C9AFF81D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49072C62DF4D477AC56D47D6EBC24C9E /* Foundation.framework */; };
-		86157EEBA2FC7A35FA1A3A1692E1C957 /* Pods-MultiPicker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EA0A7065690F7485CEF9DF4DE7F150 /* Pods-MultiPicker_Tests-dummy.m */; };
-		874DAF774F4B8B9491273F3BF17AFE88 /* UILoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF952EB800F368CE423C43E3124FAE /* UILoader.swift */; };
-		88808D5D4A4D542E78BA216E78F99D24 /* MultiPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB47F79C181E54D54D93DB0C3B708BC0 /* MultiPicker.storyboard */; };
-		8B60F6927A44BF733CDB19C0EF519974 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49072C62DF4D477AC56D47D6EBC24C9E /* Foundation.framework */; };
-		9101C9BFFAE3E89625D79A6399DB7E0D /* MultiPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AD7572A9984AF44E630F2BC23EDA033 /* MultiPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		937CC6F05D8689CA39D6079C53DAA6FE /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92569D573693EFC0736858E2E2FB0474 /* Photos.framework */; };
-		A0EBA88EDEB0D6E2DE158132BFF6ED07 /* Pods-MultiPicker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1438B1C8C0571D8BF3FCC42767423170 /* Pods-MultiPicker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE0797B722B28FC2217AD0A95728042E /* UILoader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E75A46571E215164B80A077D4B6FE9DC /* UILoader-dummy.m */; };
-		DBC78D955E6ED58DC9557F353054568A /* UILoader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDFCCFBC0C4CEF7AE70D83D9C397471B /* UILoader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0644D9CF6CBFE38B47702138927DED47 /* Defines-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC778F167812F645B2FD45CBB40F4372 /* Defines-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E605EBEDEB7ED1068F5B86293F9D6E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9234663D4657E244CAB2D93F43C65B8 /* Foundation.framework */; };
+		191F9989DAC032B91AA83755C6C70799 /* Alertable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 535B92D12F3A5A62D591753D95ACCA76 /* Alertable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EC31A80C8458D7309CD613402A4BED0 /* MultiPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB47F79C181E54D54D93DB0C3B708BC0 /* MultiPicker.storyboard */; };
+		1FFA7F5DCEF6018B3E1A434F6D48B633 /* MultiPickerChildren.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ADB0F8534F89BDA1E004BF82226B02 /* MultiPickerChildren.swift */; };
+		23051B83D9A91305D3C810B99F7C1E33 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBE668F7559961F553C6866EBBD60AA3 /* AVFoundation.framework */; };
+		232B908AC038B8C9962142DC6B26FF71 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C726D21DECBF2C57889A4C80F0C16C2 /* UIKit.framework */; };
+		31E08C29628B87F6A800CBD54E800BD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9234663D4657E244CAB2D93F43C65B8 /* Foundation.framework */; };
+		3A259A8F814C4156F771E5E365579CD4 /* MultiPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0312D3A8E5545F64AB8F5C232D6C595B /* MultiPicker-dummy.m */; };
+		47D9E979193BF50EBD8C1B006D0377CA /* Defines.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B831E672ED974E629E2090E18E8E02 /* Defines.framework */; };
+		4895814337A8F84C861B93B014751207 /* Permissionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD73A26CAB731E2ACC5052C523269668 /* Permissionable.swift */; };
+		4AFCECE6019F9AEF5FAB053DE9A55E6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9234663D4657E244CAB2D93F43C65B8 /* Foundation.framework */; };
+		54F8F5226B207DC5C8D44B72E13BB689 /* MultiPickerViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC6A685E65664A798C168598BEB1BE1 /* MultiPickerViews.swift */; };
+		5AB04ACFAAE191A34D5AC0C5E3A1DE3F /* Backgroundable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E414D01A9E06CDBAA338367DCF38C519 /* Backgroundable.swift */; };
+		60762BA897E55CBA2AE139B100D11F07 /* Pods-MultiPicker_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D4654C1B48FF4BDA32388D15BE3750 /* Pods-MultiPicker_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65506A4EAAFC3FF0EA5E81DCD04CE72F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9234663D4657E244CAB2D93F43C65B8 /* Foundation.framework */; };
+		6AECBAB8EE5124540E3196058A1A438E /* Backgroundable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5198B8079941B0882526CF8AFFB055E2 /* Backgroundable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B8E1DDD88B5EE1A642F2985CE18FC63 /* Alertable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06BA27AA69582140BD4D0770BCF3D7BB /* Alertable.framework */; };
+		77C2FCC91D278A43416A6AA823E8592A /* Pods-MultiPicker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EA0A7065690F7485CEF9DF4DE7F150 /* Pods-MultiPicker_Tests-dummy.m */; };
+		82637414C2FD49C855132FCAAD5781B1 /* UIViewController+Permissionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382372A4EB28AF13A95DAA3898B71AA7 /* UIViewController+Permissionable.swift */; };
+		854A83B62A53B34B78FBED1FB167FD75 /* Defines-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7CC5B9B21B1E8B900EF10EC42801D5 /* Defines-dummy.m */; };
+		8EEC0D62B0B4235C332719D94B10FB2D /* Permissionable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73962A284600A7DD7AF5072B0E0038E0 /* Permissionable-dummy.m */; };
+		96B24E74EB200619E9453A6E50723F87 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DC2E71105F46D02EFCAE87498BE2D0 /* Defines.swift */; };
+		9DC9611AF3089CE3873FE281DBE06DC1 /* Permissionable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD2D412031A25C7AF600859EA95AD9F /* Permissionable.framework */; };
+		B072552867CA02B2EF768A5F38858439 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C726D21DECBF2C57889A4C80F0C16C2 /* UIKit.framework */; };
+		B11753C9999A207858B368C284463A9D /* Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D1CEC485A25A3383123A6D58CF133E /* Alertable.swift */; };
+		B4BDDB0A6ECC947434AB9A057AEA8277 /* Backgroundable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AFFD8877ADC07801D94C8465478397 /* Backgroundable.framework */; };
+		BDD2C62A289799B69A2B3C42896A9C5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C726D21DECBF2C57889A4C80F0C16C2 /* UIKit.framework */; };
+		BFB1BCE88776A3C286047EB0E2E2C2C8 /* Pods-MultiPicker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1438B1C8C0571D8BF3FCC42767423170 /* Pods-MultiPicker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA6CC857C2B5687EDB6E9F8DDD49893C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9234663D4657E244CAB2D93F43C65B8 /* Foundation.framework */; };
+		D0693D29AF69F4B5432D86E09848309E /* UIViewController+Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776A40A88387B1E51A63ED5B20B15901 /* UIViewController+Alertable.swift */; };
+		D0C066B8A533E0C4ED0A85E2FFF33511 /* Permissionable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD156A40539CA431DEF57EF4D6DA28C2 /* Permissionable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D94AEAD93A7B1018D6E00A1EF560DF82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9234663D4657E244CAB2D93F43C65B8 /* Foundation.framework */; };
+		D9E4EDF2CF022F297594519E24D58297 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D6B1374EE40D0463694331AEF6FF92 /* Photos.framework */; };
+		DCEC6ECC4A998F945E0293CACE0DC63D /* Pods-MultiPicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D662B23F33CF096E5891D4D066A74F /* Pods-MultiPicker_Example-dummy.m */; };
+		E007C2C62721577393A4DC12AA1196E8 /* Backgroundable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB49AF45BF35A347A169E3BC89E53BEC /* Backgroundable-dummy.m */; };
+		E1B0C2ECBC9FB30BDCAF630B10B10977 /* MultiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874D2B1A1C612782402628529E084BA4 /* MultiPicker.swift */; };
+		E26C64BC08AA46985B35B78618A7F59D /* MultiPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AD7572A9984AF44E630F2BC23EDA033 /* MultiPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDCB51DCDB943585237ACEC2D3DB9E85 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D6B1374EE40D0463694331AEF6FF92 /* Photos.framework */; };
+		EFF4A37E7E8E44CE777D6F8B7BF5DC24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9234663D4657E244CAB2D93F43C65B8 /* Foundation.framework */; };
+		F8B4299B5BE8290C79697E0454ED9DAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C726D21DECBF2C57889A4C80F0C16C2 /* UIKit.framework */; };
+		F8EF4FC45CE95776993CFD52009DE966 /* Alertable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF3D34A20ABC6F2CE49D3AC418BFC69 /* Alertable-dummy.m */; };
+		FB7F65665DA28E418DE4225628ED2897 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C726D21DECBF2C57889A4C80F0C16C2 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		263226E5C858174A483E707D7AD807C8 /* PBXContainerItemProxy */ = {
+		170BCA8D5B422AC1D51D6EF7C27AD1DA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2D8AC0D61FF1895B387110B44CB2B618;
-			remoteInfo = UILoader;
+			remoteGlobalIDString = 89320002F6659E20D6FD66197406C397;
+			remoteInfo = Permissionable;
 		};
-		4D3CED3FB7EDA452695BB63F5D1F6FB7 /* PBXContainerItemProxy */ = {
+		1A194EBC0E85ED9A932DBDD017DBA821 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2FB1F78D5F2AC84E66266A7E546B7383;
-			remoteInfo = "MultiPicker-MultiPicker";
+			remoteGlobalIDString = 711EBEDF91EEDB7AEAA8238A46B306DB;
+			remoteInfo = Defines;
 		};
-		7CDDFDB0680E1A5E901A129947936D03 /* PBXContainerItemProxy */ = {
+		1D8C67D66646A1DED223884485B3A281 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2D8AC0D61FF1895B387110B44CB2B618;
-			remoteInfo = UILoader;
+			remoteGlobalIDString = 2E97A33CBDCE50C08224B84B5B291BF7;
+			remoteInfo = Alertable;
 		};
-		97A01F282D85B2747C4256E9FE32F9EA /* PBXContainerItemProxy */ = {
+		4770DF46E94A0C1A3E618E575DFD3BEC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 413A679AF781AE4765BC8FFB456AAA58;
+			remoteGlobalIDString = 711EBEDF91EEDB7AEAA8238A46B306DB;
+			remoteInfo = Defines;
+		};
+		486078046ED48E00BA6D1B1E1A183C80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3B356AD6270E93901443BB648E9233B;
+			remoteInfo = Backgroundable;
+		};
+		4BC57CCFE36D4C8BA4910884FCE4A4B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3B356AD6270E93901443BB648E9233B;
+			remoteInfo = Backgroundable;
+		};
+		5AB42D8D6F31D737D1DA5DBB3E831687 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29E920A34942495BBF6F6B2A1BA30611;
 			remoteInfo = MultiPicker;
 		};
-		A5FD5188493C60AAB4AF73A69F574FFE /* PBXContainerItemProxy */ = {
+		75DCF7668D4432995172A766F3F77B97 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2D8AC0D61FF1895B387110B44CB2B618;
-			remoteInfo = UILoader;
+			remoteGlobalIDString = 711EBEDF91EEDB7AEAA8238A46B306DB;
+			remoteInfo = Defines;
 		};
-		B5AB58A4ED4E971100CCCE5AAFE5368C /* PBXContainerItemProxy */ = {
+		CF205991BC9D2EA8FB1CF97CEBF0A342 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 413A679AF781AE4765BC8FFB456AAA58;
+			remoteGlobalIDString = 29E920A34942495BBF6F6B2A1BA30611;
 			remoteInfo = MultiPicker;
+		};
+		D08C4DEECE775E0C515EB6DB4634A348 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E97A33CBDCE50C08224B84B5B291BF7;
+			remoteInfo = Alertable;
+		};
+		DC7271B4A7EC944F08449D4B5792F2A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89320002F6659E20D6FD66197406C397;
+			remoteInfo = Permissionable;
+		};
+		EDA040C206FB5E709C24FAE101B53BDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E97A33CBDCE50C08224B84B5B291BF7;
+			remoteInfo = Alertable;
+		};
+		EEB57B3D3A9C2A8C31AF83F9800CF72F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3B356AD6270E93901443BB648E9233B;
+			remoteInfo = Backgroundable;
+		};
+		FDBBB0D024E2C85E1DE767F9306D0FEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89320002F6659E20D6FD66197406C397;
+			remoteInfo = Permissionable;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		003927CB736CE343840240A00F56D998 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01F6748C0A2917C6AFCA2D38CEA2C119 /* Pods-MultiPicker_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MultiPicker_Example-resources.sh"; sourceTree = "<group>"; };
 		0312D3A8E5545F64AB8F5C232D6C595B /* MultiPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MultiPicker-dummy.m"; sourceTree = "<group>"; };
+		03AFFD8877ADC07801D94C8465478397 /* Backgroundable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Backgroundable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06BA27AA69582140BD4D0770BCF3D7BB /* Alertable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alertable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C726D21DECBF2C57889A4C80F0C16C2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		107C1792AB24716536100B7BAC33355E /* Pods-MultiPicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MultiPicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		115A89D670C55894DB49F0279269E5CF /* MultiPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MultiPicker-prefix.pch"; sourceTree = "<group>"; };
 		1438B1C8C0571D8BF3FCC42767423170 /* Pods-MultiPicker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MultiPicker_Example-umbrella.h"; sourceTree = "<group>"; };
 		1456356A4D5C0443AF5CEF81D6969E60 /* Pods-MultiPicker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MultiPicker_Example-frameworks.sh"; sourceTree = "<group>"; };
-		1AC45D15B762A1257070B4A24BEBDFCC /* UILoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UILoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE0B9C162B9502EA041AE7BF6AD4B70 /* Pods-MultiPicker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MultiPicker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		20B16776F8B5816676626AE4005BB5FA /* Permissionable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Permissionable-prefix.pch"; sourceTree = "<group>"; };
+		20D1CEC485A25A3383123A6D58CF133E /* Alertable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alertable.swift; path = Pod/Classes/Alertable.swift; sourceTree = "<group>"; };
+		294B6526118E07BC6A9097A0CDA5BD87 /* Alertable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alertable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B52E189F31439FA485AA9C010CE3DDF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		339A1AA0960713160406225C69DCDA67 /* Alertable.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alertable.xcconfig; sourceTree = "<group>"; };
+		382372A4EB28AF13A95DAA3898B71AA7 /* UIViewController+Permissionable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Permissionable.swift"; path = "Pod/Classes/UIViewController+Permissionable.swift"; sourceTree = "<group>"; };
 		3974771AA5763E7289C2257EBB8D6550 /* Pods-MultiPicker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MultiPicker_Example.modulemap"; sourceTree = "<group>"; };
-		3CD35A7A0B59C5972BDFA9E4F8BE6CEC /* UILoader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UILoader.xcconfig; sourceTree = "<group>"; };
-		49072C62DF4D477AC56D47D6EBC24C9E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		4DF0773D10D4A0CB9D971CB7E9EEFC0B /* Pods_MultiPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiPicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D4F34C8A999E88AEA8F77A2F0A97A37 /* Permissionable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Permissionable.modulemap; sourceTree = "<group>"; };
+		5198B8079941B0882526CF8AFFB055E2 /* Backgroundable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Backgroundable-umbrella.h"; sourceTree = "<group>"; };
+		535B92D12F3A5A62D591753D95ACCA76 /* Alertable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alertable-umbrella.h"; sourceTree = "<group>"; };
+		54EEB4992CDAAD0C968C191C45F4DFD1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5720E1CFBD0ED144AB16B9855EDEE680 /* Pods-MultiPicker_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MultiPicker_Tests-resources.sh"; sourceTree = "<group>"; };
-		59A34929B49C3170DC944742B98053EB /* UILoader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UILoader-prefix.pch"; sourceTree = "<group>"; };
 		5BA64EA357F8D254C66FB1FA18ECC50E /* MultiPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MultiPicker.modulemap; sourceTree = "<group>"; };
-		608C9115552D971F3805182131987700 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		5E7CC5B9B21B1E8B900EF10EC42801D5 /* Defines-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Defines-dummy.m"; sourceTree = "<group>"; };
+		5FA9F91F6AB171425FE208313F7AFA5A /* Defines-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Defines-prefix.pch"; sourceTree = "<group>"; };
 		60F51CE2DBB22326562DBFED92AE2378 /* Pods-MultiPicker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MultiPicker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		62E9F5F7039813506D7C19E8B28596E4 /* MultiPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultiPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A4A7E8C95C7784B193ACD4ACD7E55B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68809EDFED3F91AACCBE37810543A272 /* Backgroundable.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Backgroundable.xcconfig; sourceTree = "<group>"; };
 		6B8671E8DFB3D4166F4E43A0A6C9708E /* Pods-MultiPicker_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MultiPicker_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		6FF3D34A20ABC6F2CE49D3AC418BFC69 /* Alertable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alertable-dummy.m"; sourceTree = "<group>"; };
+		73962A284600A7DD7AF5072B0E0038E0 /* Permissionable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Permissionable-dummy.m"; sourceTree = "<group>"; };
+		776A40A88387B1E51A63ED5B20B15901 /* UIViewController+Alertable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Alertable.swift"; path = "Pod/Classes/UIViewController+Alertable.swift"; sourceTree = "<group>"; };
+		7810E1F77329CDC4ADC00F9117919800 /* Backgroundable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Backgroundable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		797A5C85939B3196B71B8C7DE84D8633 /* Alertable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alertable.modulemap; sourceTree = "<group>"; };
+		7987C120C60ECA56B5AC41E9D2BDE9C6 /* Alertable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alertable-prefix.pch"; sourceTree = "<group>"; };
+		7B2CE3458BA5E033C4B240F321FAAE89 /* Defines.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Defines.modulemap; sourceTree = "<group>"; };
+		7CD2D412031A25C7AF600859EA95AD9F /* Permissionable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Permissionable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F48DB441913E1EF93A989F2F741435 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8193D7344595092458E33C2026FB8B31 /* Pods-MultiPicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MultiPicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		81F913B99331144E7267C717E1809C44 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84809D725A81B8DAB033F1FFD0D9948B /* Pods_MultiPicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiPicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D4654C1B48FF4BDA32388D15BE3750 /* Pods-MultiPicker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MultiPicker_Tests-umbrella.h"; sourceTree = "<group>"; };
 		874D2B1A1C612782402628529E084BA4 /* MultiPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MultiPicker.swift; sourceTree = "<group>"; };
+		89F391EF5AC2DE8D09C5BD32C20459EA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AD7572A9984AF44E630F2BC23EDA033 /* MultiPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MultiPicker-umbrella.h"; sourceTree = "<group>"; };
-		92569D573693EFC0736858E2E2FB0474 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
+		8EFAF720509FF939C94A054E31DB6586 /* Defines.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Defines.xcconfig; sourceTree = "<group>"; };
+		943A61CF7CA6AB8EC1313F5A9F17F4EE /* Backgroundable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Backgroundable.modulemap; sourceTree = "<group>"; };
 		95742098D81BE4090E444E845C0B77B2 /* Pods-MultiPicker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MultiPicker_Tests.modulemap"; sourceTree = "<group>"; };
-		A2094F884F825093D1C0F0720EA1542B /* MultiPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultiPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98D8A32E2D12EC43075C2902B4100EE2 /* Backgroundable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Backgroundable-prefix.pch"; sourceTree = "<group>"; };
+		A2DC2E71105F46D02EFCAE87498BE2D0 /* Defines.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Defines.swift; path = Pod/Classes/Defines.swift; sourceTree = "<group>"; };
+		A471B703F59AE91260642E4F45F1D88D /* Permissionable.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Permissionable.xcconfig; sourceTree = "<group>"; };
 		A4FA7662DCB7992D85FE39CD3E83BB11 /* Pods-MultiPicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MultiPicker_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A635A82694F71671A902005928E2E8A8 /* Pods-MultiPicker_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MultiPicker_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A98C9DBD856F01A7F9C4087FD85C6EAA /* Pods_MultiPicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiPicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AAD0540398E0DE263A2BAF8946811AA5 /* MultiPicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiPicker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFF2A979DA806B99C0F8308AA4CB5B28 /* UILoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UILoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA36D22781160C84C40E180DD4DB5DA8 /* Pods_MultiPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiPicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0ADB0F8534F89BDA1E004BF82226B02 /* MultiPickerChildren.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MultiPickerChildren.swift; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BDA0E589DDDA80E2A5B6739619ADAC65 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF7F37163CBC514082C2D712112A23F9 /* MultiPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MultiPicker.xcconfig; sourceTree = "<group>"; };
 		C686CAF9F258D150661A4D3BC0CB8E26 /* Pods-MultiPicker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MultiPicker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C7EA0A7065690F7485CEF9DF4DE7F150 /* Pods-MultiPicker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MultiPicker_Tests-dummy.m"; sourceTree = "<group>"; };
-		D22A17826B41B4DF77D82C71AA25D2B3 /* UILoader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UILoader.modulemap; sourceTree = "<group>"; };
-		E75A46571E215164B80A077D4B6FE9DC /* UILoader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UILoader-dummy.m"; sourceTree = "<group>"; };
+		C9D6B1374EE40D0463694331AEF6FF92 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
+		CC778F167812F645B2FD45CBB40F4372 /* Defines-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Defines-umbrella.h"; sourceTree = "<group>"; };
+		CD73A26CAB731E2ACC5052C523269668 /* Permissionable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Permissionable.swift; path = Pod/Classes/Permissionable.swift; sourceTree = "<group>"; };
+		DB49AF45BF35A347A169E3BC89E53BEC /* Backgroundable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Backgroundable-dummy.m"; sourceTree = "<group>"; };
+		DC64F09028E7FCE5F466362DFB7287CF /* Defines.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Defines.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E414D01A9E06CDBAA338367DCF38C519 /* Backgroundable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Backgroundable.swift; path = Pod/Classes/Backgroundable.swift; sourceTree = "<group>"; };
+		E4B831E672ED974E629E2090E18E8E02 /* Defines.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Defines.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9234663D4657E244CAB2D93F43C65B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EE5CEB56E209F1423491D4B7B44E8074 /* Permissionable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Permissionable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D662B23F33CF096E5891D4D066A74F /* Pods-MultiPicker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MultiPicker_Example-dummy.m"; sourceTree = "<group>"; };
-		F8BF952EB800F368CE423C43E3124FAE /* UILoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UILoader.swift; path = Pod/Classes/UILoader.swift; sourceTree = "<group>"; };
 		F9E9182E6240E9D9A4AE4045139D284A /* Pods-MultiPicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MultiPicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FB47F79C181E54D54D93DB0C3B708BC0 /* MultiPicker.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = MultiPicker.storyboard; sourceTree = "<group>"; };
 		FBC6A685E65664A798C168598BEB1BE1 /* MultiPickerViews.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MultiPickerViews.swift; sourceTree = "<group>"; };
-		FDFCCFBC0C4CEF7AE70D83D9C397471B /* UILoader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UILoader-umbrella.h"; sourceTree = "<group>"; };
+		FBE668F7559961F553C6866EBBD60AA3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		FD156A40539CA431DEF57EF4D6DA28C2 /* Permissionable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Permissionable-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		37226D56C6173FE966D5BBDAB841E9BD /* Frameworks */ = {
+		429EE6F8BB49CE2622AD1E2E8A3B1464 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11A67DA62571C6A01278BDF6AE9D3799 /* Foundation.framework in Frameworks */,
-				520D3BB83AE23D743AC9D93F5CC1A326 /* UIKit.framework in Frameworks */,
+				31E08C29628B87F6A800CBD54E800BD1 /* Foundation.framework in Frameworks */,
+				F8B4299B5BE8290C79697E0454ED9DAD /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		85A77B090B65A789C88BF7F657E107A5 /* Frameworks */ = {
+		895D960541B62E29CC83C5EF000B5836 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65506A4EAAFC3FF0EA5E81DCD04CE72F /* Foundation.framework in Frameworks */,
+				FB7F65665DA28E418DE4225628ED2897 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88AE0B4128BC4B3D116581D86B1F2C63 /* Frameworks */ = {
+		BCA436A7B86DB9D994B2191CA8A77E86 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B60F6927A44BF733CDB19C0EF519974 /* Foundation.framework in Frameworks */,
+				4AFCECE6019F9AEF5FAB053DE9A55E6E /* Foundation.framework in Frameworks */,
+				B072552867CA02B2EF768A5F38858439 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE4B74F832BE1AB92AD1DE40ECA48D82 /* Frameworks */ = {
+		D377D189ABA68CCAD51F7B8D22DC3E04 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25B68729A9BE1A4AFA02D4EAA131A2F3 /* Foundation.framework in Frameworks */,
-				937CC6F05D8689CA39D6079C53DAA6FE /* Photos.framework in Frameworks */,
-				2022F5DF09413A1A938F827012D142EC /* UIKit.framework in Frameworks */,
-				35EBC6AE2C515C5D33EC3B632D65A7C0 /* UILoader.framework in Frameworks */,
+				EFF4A37E7E8E44CE777D6F8B7BF5DC24 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F5B620E40204BC2C00E33B75449A76D9 /* Frameworks */ = {
+		F2417FBD053C2018571BDED480FE5734 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81E33A84CFEE765493552927C9AFF81D /* Foundation.framework in Frameworks */,
+				CA6CC857C2B5687EDB6E9F8DDD49893C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA17A9C24D03353DA35B91E48EDFCF56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D94AEAD93A7B1018D6E00A1EF560DF82 /* Foundation.framework in Frameworks */,
+				9DC9611AF3089CE3873FE281DBE06DC1 /* Permissionable.framework in Frameworks */,
+				EDCB51DCDB943585237ACEC2D3DB9E85 /* Photos.framework in Frameworks */,
+				BDD2C62A289799B69A2B3C42896A9C5A /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFE79F1615C147018B5BAA1448E36341 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B8E1DDD88B5EE1A642F2985CE18FC63 /* Alertable.framework in Frameworks */,
+				23051B83D9A91305D3C810B99F7C1E33 /* AVFoundation.framework in Frameworks */,
+				B4BDDB0A6ECC947434AB9A057AEA8277 /* Backgroundable.framework in Frameworks */,
+				47D9E979193BF50EBD8C1B006D0377CA /* Defines.framework in Frameworks */,
+				0E605EBEDEB7ED1068F5B86293F9D6E3 /* Foundation.framework in Frameworks */,
+				D9E4EDF2CF022F297594519E24D58297 /* Photos.framework in Frameworks */,
+				232B908AC038B8C9962142DC6B26FF71 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,28 +322,6 @@
 			path = "Target Support Files/Pods-MultiPicker_Example";
 			sourceTree = "<group>";
 		};
-		13BA1F1441970B782AECE18035E3164D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7128B73F41E39C3C6993880032B0A216 /* UILoader */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		1942DEFA064929DE4A682B10A9CFBC13 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				81F913B99331144E7267C717E1809C44 /* Info.plist */,
-				D22A17826B41B4DF77D82C71AA25D2B3 /* UILoader.modulemap */,
-				3CD35A7A0B59C5972BDFA9E4F8BE6CEC /* UILoader.xcconfig */,
-				E75A46571E215164B80A077D4B6FE9DC /* UILoader-dummy.m */,
-				59A34929B49C3170DC944742B98053EB /* UILoader-prefix.pch */,
-				FDFCCFBC0C4CEF7AE70D83D9C397471B /* UILoader-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/UILoader";
-			sourceTree = "<group>";
-		};
 		2630AB56E4CE714DACBDC4203F74DB3E /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +329,18 @@
 				75D2C7EAD93A88E21A42E81968B5F0FD /* Pods-MultiPicker_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3312E2FC541A5CE6F67A3C2986784625 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06BA27AA69582140BD4D0770BCF3D7BB /* Alertable.framework */,
+				03AFFD8877ADC07801D94C8465478397 /* Backgroundable.framework */,
+				E4B831E672ED974E629E2090E18E8E02 /* Defines.framework */,
+				7CD2D412031A25C7AF600859EA95AD9F /* Permissionable.framework */,
+				CA0179D87210276263A6D3AA0EAE8D25 /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		3B8BA4A61EF309BB98A4F84311912E4B /* Classes */ = {
@@ -230,6 +351,16 @@
 				FBC6A685E65664A798C168598BEB1BE1 /* MultiPickerViews.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		3B94523F59159725A69C1229155A724B /* Alertable */ = {
+			isa = PBXGroup;
+			children = (
+				20D1CEC485A25A3383123A6D58CF133E /* Alertable.swift */,
+				776A40A88387B1E51A63ED5B20B15901 /* UIViewController+Alertable.swift */,
+				AE7025DA29730A5E1595377252C64967 /* Support Files */,
+			);
+			path = Alertable;
 			sourceTree = "<group>";
 		};
 		40714471733D7FD2A706207979458319 /* Resources */ = {
@@ -251,6 +382,16 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
+		4A2DDAFAA82E8C7F9D06D3E2C07E618B /* Permissionable */ = {
+			isa = PBXGroup;
+			children = (
+				CD73A26CAB731E2ACC5052C523269668 /* Permissionable.swift */,
+				382372A4EB28AF13A95DAA3898B71AA7 /* UIViewController+Permissionable.swift */,
+				581FC46E4311A1BB656D36F4CAC035E0 /* Support Files */,
+			);
+			path = Permissionable;
+			sourceTree = "<group>";
+		};
 		5201FB164F66814FE953BF160AA9577A /* Pod */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,22 +400,46 @@
 			path = Pod;
 			sourceTree = "<group>";
 		};
-		5CCC4964A5C695FCB51B28F8E35DA581 /* Frameworks */ = {
+		581FC46E4311A1BB656D36F4CAC035E0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AFF2A979DA806B99C0F8308AA4CB5B28 /* UILoader.framework */,
-				FD638940F8609F5C0B41E5CBF08C78DE /* iOS */,
+				89F391EF5AC2DE8D09C5BD32C20459EA /* Info.plist */,
+				4D4F34C8A999E88AEA8F77A2F0A97A37 /* Permissionable.modulemap */,
+				A471B703F59AE91260642E4F45F1D88D /* Permissionable.xcconfig */,
+				73962A284600A7DD7AF5072B0E0038E0 /* Permissionable-dummy.m */,
+				20B16776F8B5816676626AE4005BB5FA /* Permissionable-prefix.pch */,
+				FD156A40539CA431DEF57EF4D6DA28C2 /* Permissionable-umbrella.h */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/Permissionable";
 			sourceTree = "<group>";
 		};
-		7128B73F41E39C3C6993880032B0A216 /* UILoader */ = {
+		68EB20629D713CCD414FD4CD11F4DBD6 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F8BF952EB800F368CE423C43E3124FAE /* UILoader.swift */,
-				1942DEFA064929DE4A682B10A9CFBC13 /* Support Files */,
+				943A61CF7CA6AB8EC1313F5A9F17F4EE /* Backgroundable.modulemap */,
+				68809EDFED3F91AACCBE37810543A272 /* Backgroundable.xcconfig */,
+				DB49AF45BF35A347A169E3BC89E53BEC /* Backgroundable-dummy.m */,
+				98D8A32E2D12EC43075C2902B4100EE2 /* Backgroundable-prefix.pch */,
+				5198B8079941B0882526CF8AFFB055E2 /* Backgroundable-umbrella.h */,
+				54EEB4992CDAAD0C968C191C45F4DFD1 /* Info.plist */,
 			);
-			path = UILoader;
+			name = "Support Files";
+			path = "../Target Support Files/Backgroundable";
+			sourceTree = "<group>";
+		};
+		6D5FF4BBCA5A7DF8C0B45E3641260AE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				294B6526118E07BC6A9097A0CDA5BD87 /* Alertable.framework */,
+				7810E1F77329CDC4ADC00F9117919800 /* Backgroundable.framework */,
+				DC64F09028E7FCE5F466362DFB7287CF /* Defines.framework */,
+				62E9F5F7039813506D7C19E8B28596E4 /* MultiPicker.framework */,
+				EE5CEB56E209F1423491D4B7B44E8074 /* Permissionable.framework */,
+				AA36D22781160C84C40E180DD4DB5DA8 /* Pods_MultiPicker_Example.framework */,
+				84809D725A81B8DAB033F1FFD0D9948B /* Pods_MultiPicker_Tests.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		75D2C7EAD93A88E21A42E81968B5F0FD /* Pods-MultiPicker_Tests */ = {
@@ -300,11 +465,43 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				B6A7EDD8781F3F5F820E2448FB75DF94 /* Development Pods */,
-				5CCC4964A5C695FCB51B28F8E35DA581 /* Frameworks */,
-				13BA1F1441970B782AECE18035E3164D /* Pods */,
-				BD49F6EAA4A4C27F2403621242C98B47 /* Products */,
+				3312E2FC541A5CE6F67A3C2986784625 /* Frameworks */,
+				C29597753F16203B42A9FCEA161E9BAC /* Pods */,
+				6D5FF4BBCA5A7DF8C0B45E3641260AE6 /* Products */,
 				2630AB56E4CE714DACBDC4203F74DB3E /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		7F1AB8BCF0EAD4A9D120689B46CFC8CE /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				A2DC2E71105F46D02EFCAE87498BE2D0 /* Defines.swift */,
+				B7892F8397ABEC1992EDB8ADE200032F /* Support Files */,
+			);
+			path = Defines;
+			sourceTree = "<group>";
+		};
+		8BD085792A72D5C1CDD24A32A2D6A967 /* Backgroundable */ = {
+			isa = PBXGroup;
+			children = (
+				E414D01A9E06CDBAA338367DCF38C519 /* Backgroundable.swift */,
+				68EB20629D713CCD414FD4CD11F4DBD6 /* Support Files */,
+			);
+			path = Backgroundable;
+			sourceTree = "<group>";
+		};
+		AE7025DA29730A5E1595377252C64967 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				797A5C85939B3196B71B8C7DE84D8633 /* Alertable.modulemap */,
+				339A1AA0960713160406225C69DCDA67 /* Alertable.xcconfig */,
+				6FF3D34A20ABC6F2CE49D3AC418BFC69 /* Alertable-dummy.m */,
+				7987C120C60ECA56B5AC41E9D2BDE9C6 /* Alertable-prefix.pch */,
+				535B92D12F3A5A62D591753D95ACCA76 /* Alertable-umbrella.h */,
+				003927CB736CE343840240A00F56D998 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alertable";
 			sourceTree = "<group>";
 		};
 		B6A7EDD8781F3F5F820E2448FB75DF94 /* Development Pods */ = {
@@ -315,16 +512,18 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		BD49F6EAA4A4C27F2403621242C98B47 /* Products */ = {
+		B7892F8397ABEC1992EDB8ADE200032F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AAD0540398E0DE263A2BAF8946811AA5 /* MultiPicker.bundle */,
-				A2094F884F825093D1C0F0720EA1542B /* MultiPicker.framework */,
-				4DF0773D10D4A0CB9D971CB7E9EEFC0B /* Pods_MultiPicker_Example.framework */,
-				A98C9DBD856F01A7F9C4087FD85C6EAA /* Pods_MultiPicker_Tests.framework */,
-				1AC45D15B762A1257070B4A24BEBDFCC /* UILoader.framework */,
+				7B2CE3458BA5E033C4B240F321FAAE89 /* Defines.modulemap */,
+				8EFAF720509FF939C94A054E31DB6586 /* Defines.xcconfig */,
+				5E7CC5B9B21B1E8B900EF10EC42801D5 /* Defines-dummy.m */,
+				5FA9F91F6AB171425FE208313F7AFA5A /* Defines-prefix.pch */,
+				CC778F167812F645B2FD45CBB40F4372 /* Defines-umbrella.h */,
+				2B52E189F31439FA485AA9C010CE3DDF /* Info.plist */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/Defines";
 			sourceTree = "<group>";
 		};
 		C21C86FA90CC341EDE1E3C1791659767 /* Assets */ = {
@@ -333,6 +532,17 @@
 				FB47F79C181E54D54D93DB0C3B708BC0 /* MultiPicker.storyboard */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		C29597753F16203B42A9FCEA161E9BAC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B94523F59159725A69C1229155A724B /* Alertable */,
+				8BD085792A72D5C1CDD24A32A2D6A967 /* Backgroundable */,
+				7F1AB8BCF0EAD4A9D120689B46CFC8CE /* Defines */,
+				4A2DDAFAA82E8C7F9D06D3E2C07E618B /* Permissionable */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		C9DC0ED2856A66BD91C1DE3ED8FBADB1 /* Support Files */ = {
@@ -349,6 +559,17 @@
 			path = "Example/Pods/Target Support Files/MultiPicker";
 			sourceTree = "<group>";
 		};
+		CA0179D87210276263A6D3AA0EAE8D25 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FBE668F7559961F553C6866EBBD60AA3 /* AVFoundation.framework */,
+				E9234663D4657E244CAB2D93F43C65B8 /* Foundation.framework */,
+				C9D6B1374EE40D0463694331AEF6FF92 /* Photos.framework */,
+				0C726D21DECBF2C57889A4C80F0C16C2 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		E0811B0A95EAE3DD21DDCBFFEEB039ED /* Pod */ = {
 			isa = PBXGroup;
 			children = (
@@ -357,144 +578,200 @@
 			path = Pod;
 			sourceTree = "<group>";
 		};
-		FD638940F8609F5C0B41E5CBF08C78DE /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				49072C62DF4D477AC56D47D6EBC24C9E /* Foundation.framework */,
-				92569D573693EFC0736858E2E2FB0474 /* Photos.framework */,
-				608C9115552D971F3805182131987700 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3B59128B4FC06856BDC3BFC409A5BD69 /* Headers */ = {
+		1AE2F7154E6F2D2D6EDB86F9075B78DA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBC78D955E6ED58DC9557F353054568A /* UILoader-umbrella.h in Headers */,
+				BFB1BCE88776A3C286047EB0E2E2C2C8 /* Pods-MultiPicker_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2634B69156E08CB28B6DC6F6DC2EB01 /* Headers */ = {
+		329EC658AC6F68E245C0AB4319A9F5B4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0EBA88EDEB0D6E2DE158132BFF6ED07 /* Pods-MultiPicker_Example-umbrella.h in Headers */,
+				60762BA897E55CBA2AE139B100D11F07 /* Pods-MultiPicker_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7A4A05DD71DD61B548375D7B14AC91B /* Headers */ = {
+		4FE4E8C61D93347DA7E4795F101AB77F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9101C9BFFAE3E89625D79A6399DB7E0D /* MultiPicker-umbrella.h in Headers */,
+				E26C64BC08AA46985B35B78618A7F59D /* MultiPicker-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FC7418732A700C6B96312872EA71DEDC /* Headers */ = {
+		A379AA09D642A838599332A4FF86B328 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				287ED9FD3C76C931F4D9E45A6BD4A6C9 /* Pods-MultiPicker_Tests-umbrella.h in Headers */,
+				6AECBAB8EE5124540E3196058A1A438E /* Backgroundable-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4AD475732BFB2FE1FE948EACAD4E638 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0644D9CF6CBFE38B47702138927DED47 /* Defines-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E925483844F1A9B8A36F23E2DC705ADE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0C066B8A533E0C4ED0A85E2FFF33511 /* Permissionable-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0CB2213A9258278E59CA157F0F676F9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				191F9989DAC032B91AA83755C6C70799 /* Alertable-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2D8AC0D61FF1895B387110B44CB2B618 /* UILoader */ = {
+		29E920A34942495BBF6F6B2A1BA30611 /* MultiPicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 536AC688D66B41E7F964BDAE256E786F /* Build configuration list for PBXNativeTarget "UILoader" */;
+			buildConfigurationList = 31F77851DF6F91E35F436FADBEA5C2F6 /* Build configuration list for PBXNativeTarget "MultiPicker" */;
 			buildPhases = (
-				310E582EA9BC398A6C85DC22AE47C120 /* Sources */,
-				37226D56C6173FE966D5BBDAB841E9BD /* Frameworks */,
-				3B59128B4FC06856BDC3BFC409A5BD69 /* Headers */,
+				9B2B8842178C1FE0BE72EE03DAD3FC34 /* Sources */,
+				FA17A9C24D03353DA35B91E48EDFCF56 /* Frameworks */,
+				064617797A91C2A891D8C146BC24BB38 /* Resources */,
+				4FE4E8C61D93347DA7E4795F101AB77F /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = UILoader;
-			productName = UILoader;
-			productReference = 1AC45D15B762A1257070B4A24BEBDFCC /* UILoader.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		2FB1F78D5F2AC84E66266A7E546B7383 /* MultiPicker-MultiPicker */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 05577E3CB76D676BA4DAB8F084517385 /* Build configuration list for PBXNativeTarget "MultiPicker-MultiPicker" */;
-			buildPhases = (
-				90DE8660B6016FEF9DB4637B14B7BFA8 /* Sources */,
-				85A77B090B65A789C88BF7F657E107A5 /* Frameworks */,
-				D5A15434220760843E49F4C77A6C0D94 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "MultiPicker-MultiPicker";
-			productName = "MultiPicker-MultiPicker";
-			productReference = AAD0540398E0DE263A2BAF8946811AA5 /* MultiPicker.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		413A679AF781AE4765BC8FFB456AAA58 /* MultiPicker */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2D7DD46FCF2BE45DDCA0CDB36B2BF7F0 /* Build configuration list for PBXNativeTarget "MultiPicker" */;
-			buildPhases = (
-				E93E02F23E07F03485CC25901472F953 /* Sources */,
-				EE4B74F832BE1AB92AD1DE40ECA48D82 /* Frameworks */,
-				3C30C8D231F4AD2F3E1BC64348761770 /* Resources */,
-				F7A4A05DD71DD61B548375D7B14AC91B /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5272EA1DA00D8C1DD371AE8BBFF50670 /* PBXTargetDependency */,
-				5FAA764E6FC600FB9033BD936054F391 /* PBXTargetDependency */,
+				95AC8F32FA35D33DDA1514C7069BD3DE /* PBXTargetDependency */,
 			);
 			name = MultiPicker;
 			productName = MultiPicker;
-			productReference = A2094F884F825093D1C0F0720EA1542B /* MultiPicker.framework */;
+			productReference = 62E9F5F7039813506D7C19E8B28596E4 /* MultiPicker.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		ACD5BBA5BB32B4603CA00031B89433D0 /* Pods-MultiPicker_Example */ = {
+		2E97A33CBDCE50C08224B84B5B291BF7 /* Alertable */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E0B367F8926F97B304BBA18FE6BAF7F5 /* Build configuration list for PBXNativeTarget "Pods-MultiPicker_Example" */;
+			buildConfigurationList = CD1ED9B31D3C43CECBBE98F7EC0582FD /* Build configuration list for PBXNativeTarget "Alertable" */;
 			buildPhases = (
-				ED893F505CB8230D0C9C066AC37EF8A7 /* Sources */,
-				F5B620E40204BC2C00E33B75449A76D9 /* Frameworks */,
-				E2634B69156E08CB28B6DC6F6DC2EB01 /* Headers */,
+				9B5A4FE1A26CB92546B96CF1A1A1B741 /* Sources */,
+				895D960541B62E29CC83C5EF000B5836 /* Frameworks */,
+				F0CB2213A9258278E59CA157F0F676F9 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8FDA506BCF535FE7269022242A5FF062 /* PBXTargetDependency */,
-				2512442477D42F95BD3CC5C04F30AB06 /* PBXTargetDependency */,
+			);
+			name = Alertable;
+			productName = Alertable;
+			productReference = 294B6526118E07BC6A9097A0CDA5BD87 /* Alertable.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2F17FBFECF40A2917A587926ADD941A1 /* Pods-MultiPicker_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E215B574758330BD870880514CBF5C15 /* Build configuration list for PBXNativeTarget "Pods-MultiPicker_Example" */;
+			buildPhases = (
+				4F468B458920477AA52B4EA0D7395818 /* Sources */,
+				F2417FBD053C2018571BDED480FE5734 /* Frameworks */,
+				1AE2F7154E6F2D2D6EDB86F9075B78DA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4082AEF09AC73E37562C0A67A23FA0D /* PBXTargetDependency */,
+				927D11568A50F84E58E9C32BD69C4AE2 /* PBXTargetDependency */,
+				45C3116A3F74480FCEA2075AD674C1B4 /* PBXTargetDependency */,
+				6448BBB06E45954AF12A297F2DC6FCFC /* PBXTargetDependency */,
+				26589EEE217EA6DAC56025FA640B87FF /* PBXTargetDependency */,
 			);
 			name = "Pods-MultiPicker_Example";
 			productName = "Pods-MultiPicker_Example";
-			productReference = 4DF0773D10D4A0CB9D971CB7E9EEFC0B /* Pods_MultiPicker_Example.framework */;
+			productReference = AA36D22781160C84C40E180DD4DB5DA8 /* Pods_MultiPicker_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		AFCBE3BBE2ABA7FCC4E9ADF3E19267D1 /* Pods-MultiPicker_Tests */ = {
+		57BB3288161555FC8C6AF67CD7111506 /* Pods-MultiPicker_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 61F95C4F10693EF1AC8DC2731FE0CBB4 /* Build configuration list for PBXNativeTarget "Pods-MultiPicker_Tests" */;
+			buildConfigurationList = AE6D9FB7E44833C120623C50B4D13175 /* Build configuration list for PBXNativeTarget "Pods-MultiPicker_Tests" */;
 			buildPhases = (
-				0E228C0538DBC372C5CAE33FB31E558C /* Sources */,
-				88AE0B4128BC4B3D116581D86B1F2C63 /* Frameworks */,
-				FC7418732A700C6B96312872EA71DEDC /* Headers */,
+				15EDEEAFEF5FBA3BC29C79043D99F06B /* Sources */,
+				D377D189ABA68CCAD51F7B8D22DC3E04 /* Frameworks */,
+				329EC658AC6F68E245C0AB4319A9F5B4 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DCC5EFCCF476CE07995DCCAE3B3AAB48 /* PBXTargetDependency */,
-				CD663A7FF4E608170D26CBB57F2D6E9C /* PBXTargetDependency */,
+				83E00DDD0CA4EACBE7AADEAA8A4E6C64 /* PBXTargetDependency */,
+				363DA4709DB32F8F07020EE488022A87 /* PBXTargetDependency */,
+				2DA578BE92E7F81440C24D92F1050C1A /* PBXTargetDependency */,
+				7791DA761F96614839EB3896AA84783A /* PBXTargetDependency */,
+				7FF33737DDBF67230D14E17D95C3C525 /* PBXTargetDependency */,
 			);
 			name = "Pods-MultiPicker_Tests";
 			productName = "Pods-MultiPicker_Tests";
-			productReference = A98C9DBD856F01A7F9C4087FD85C6EAA /* Pods_MultiPicker_Tests.framework */;
+			productReference = 84809D725A81B8DAB033F1FFD0D9948B /* Pods_MultiPicker_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		711EBEDF91EEDB7AEAA8238A46B306DB /* Defines */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AF3A65252A8D9611C9778F3C2C763A1 /* Build configuration list for PBXNativeTarget "Defines" */;
+			buildPhases = (
+				B654259B34556D0482835DC3AE74A507 /* Sources */,
+				BCA436A7B86DB9D994B2191CA8A77E86 /* Frameworks */,
+				E4AD475732BFB2FE1FE948EACAD4E638 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Defines;
+			productName = Defines;
+			productReference = DC64F09028E7FCE5F466362DFB7287CF /* Defines.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		89320002F6659E20D6FD66197406C397 /* Permissionable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C6E9C608995CE8D4926113D9B15603C /* Build configuration list for PBXNativeTarget "Permissionable" */;
+			buildPhases = (
+				33B55F181A87D5EE3AF31DDF964C07F8 /* Sources */,
+				FFE79F1615C147018B5BAA1448E36341 /* Frameworks */,
+				E925483844F1A9B8A36F23E2DC705ADE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8195B2A0187D220DE409915ACB88E91 /* PBXTargetDependency */,
+				DE7D6CCBBEE7457898A5F665BBD38004 /* PBXTargetDependency */,
+				970CCF6991A6E9930526562CC85AB30B /* PBXTargetDependency */,
+			);
+			name = Permissionable;
+			productName = Permissionable;
+			productReference = EE5CEB56E209F1423491D4B7B44E8074 /* Permissionable.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A3B356AD6270E93901443BB648E9233B /* Backgroundable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5B5FA15D8F46DA45D872B83E5384044 /* Build configuration list for PBXNativeTarget "Backgroundable" */;
+			buildPhases = (
+				1AB732E691D06658DF5DAAE181DF1395 /* Sources */,
+				429EE6F8BB49CE2622AD1E2E8A3B1464 /* Frameworks */,
+				A379AA09D642A838599332A4FF86B328 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Backgroundable;
+			productName = Backgroundable;
+			productReference = 7810E1F77329CDC4ADC00F9117919800 /* Backgroundable.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -514,127 +791,191 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = BD49F6EAA4A4C27F2403621242C98B47 /* Products */;
+			productRefGroup = 6D5FF4BBCA5A7DF8C0B45E3641260AE6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				413A679AF781AE4765BC8FFB456AAA58 /* MultiPicker */,
-				2FB1F78D5F2AC84E66266A7E546B7383 /* MultiPicker-MultiPicker */,
-				ACD5BBA5BB32B4603CA00031B89433D0 /* Pods-MultiPicker_Example */,
-				AFCBE3BBE2ABA7FCC4E9ADF3E19267D1 /* Pods-MultiPicker_Tests */,
-				2D8AC0D61FF1895B387110B44CB2B618 /* UILoader */,
+				2E97A33CBDCE50C08224B84B5B291BF7 /* Alertable */,
+				A3B356AD6270E93901443BB648E9233B /* Backgroundable */,
+				711EBEDF91EEDB7AEAA8238A46B306DB /* Defines */,
+				29E920A34942495BBF6F6B2A1BA30611 /* MultiPicker */,
+				89320002F6659E20D6FD66197406C397 /* Permissionable */,
+				2F17FBFECF40A2917A587926ADD941A1 /* Pods-MultiPicker_Example */,
+				57BB3288161555FC8C6AF67CD7111506 /* Pods-MultiPicker_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3C30C8D231F4AD2F3E1BC64348761770 /* Resources */ = {
+		064617797A91C2A891D8C146BC24BB38 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50A624A04A4A61008EACC0498F7B1CB0 /* MultiPicker.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5A15434220760843E49F4C77A6C0D94 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				88808D5D4A4D542E78BA216E78F99D24 /* MultiPicker.storyboard in Resources */,
+				1EC31A80C8458D7309CD613402A4BED0 /* MultiPicker.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0E228C0538DBC372C5CAE33FB31E558C /* Sources */ = {
+		15EDEEAFEF5FBA3BC29C79043D99F06B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86157EEBA2FC7A35FA1A3A1692E1C957 /* Pods-MultiPicker_Tests-dummy.m in Sources */,
+				77C2FCC91D278A43416A6AA823E8592A /* Pods-MultiPicker_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		310E582EA9BC398A6C85DC22AE47C120 /* Sources */ = {
+		1AB732E691D06658DF5DAAE181DF1395 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE0797B722B28FC2217AD0A95728042E /* UILoader-dummy.m in Sources */,
-				874DAF774F4B8B9491273F3BF17AFE88 /* UILoader.swift in Sources */,
+				E007C2C62721577393A4DC12AA1196E8 /* Backgroundable-dummy.m in Sources */,
+				5AB04ACFAAE191A34D5AC0C5E3A1DE3F /* Backgroundable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		90DE8660B6016FEF9DB4637B14B7BFA8 /* Sources */ = {
+		33B55F181A87D5EE3AF31DDF964C07F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EEC0D62B0B4235C332719D94B10FB2D /* Permissionable-dummy.m in Sources */,
+				4895814337A8F84C861B93B014751207 /* Permissionable.swift in Sources */,
+				82637414C2FD49C855132FCAAD5781B1 /* UIViewController+Permissionable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E93E02F23E07F03485CC25901472F953 /* Sources */ = {
+		4F468B458920477AA52B4EA0D7395818 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01107274AA8F7A249CBE31CE255B62DA /* MultiPicker-dummy.m in Sources */,
-				38EE0BF7B40FD283A489DE36C299A0DF /* MultiPicker.swift in Sources */,
-				2E835ECE1B9F7691DE4329971CFDE965 /* MultiPickerChildren.swift in Sources */,
-				293E11319C512FF0D282144E36A7CD82 /* MultiPickerViews.swift in Sources */,
+				DCEC6ECC4A998F945E0293CACE0DC63D /* Pods-MultiPicker_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ED893F505CB8230D0C9C066AC37EF8A7 /* Sources */ = {
+		9B2B8842178C1FE0BE72EE03DAD3FC34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				682E6BADCB5E53941859DA4F092A8891 /* Pods-MultiPicker_Example-dummy.m in Sources */,
+				3A259A8F814C4156F771E5E365579CD4 /* MultiPicker-dummy.m in Sources */,
+				E1B0C2ECBC9FB30BDCAF630B10B10977 /* MultiPicker.swift in Sources */,
+				1FFA7F5DCEF6018B3E1A434F6D48B633 /* MultiPickerChildren.swift in Sources */,
+				54F8F5226B207DC5C8D44B72E13BB689 /* MultiPickerViews.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B5A4FE1A26CB92546B96CF1A1A1B741 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8EF4FC45CE95776993CFD52009DE966 /* Alertable-dummy.m in Sources */,
+				B11753C9999A207858B368C284463A9D /* Alertable.swift in Sources */,
+				D0693D29AF69F4B5432D86E09848309E /* UIViewController+Alertable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B654259B34556D0482835DC3AE74A507 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854A83B62A53B34B78FBED1FB167FD75 /* Defines-dummy.m in Sources */,
+				96B24E74EB200619E9453A6E50723F87 /* Defines.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2512442477D42F95BD3CC5C04F30AB06 /* PBXTargetDependency */ = {
+		26589EEE217EA6DAC56025FA640B87FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = UILoader;
-			target = 2D8AC0D61FF1895B387110B44CB2B618 /* UILoader */;
-			targetProxy = A5FD5188493C60AAB4AF73A69F574FFE /* PBXContainerItemProxy */;
+			name = Permissionable;
+			target = 89320002F6659E20D6FD66197406C397 /* Permissionable */;
+			targetProxy = FDBBB0D024E2C85E1DE767F9306D0FEB /* PBXContainerItemProxy */;
 		};
-		5272EA1DA00D8C1DD371AE8BBFF50670 /* PBXTargetDependency */ = {
+		2DA578BE92E7F81440C24D92F1050C1A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "MultiPicker-MultiPicker";
-			target = 2FB1F78D5F2AC84E66266A7E546B7383 /* MultiPicker-MultiPicker */;
-			targetProxy = 4D3CED3FB7EDA452695BB63F5D1F6FB7 /* PBXContainerItemProxy */;
+			name = Defines;
+			target = 711EBEDF91EEDB7AEAA8238A46B306DB /* Defines */;
+			targetProxy = 75DCF7668D4432995172A766F3F77B97 /* PBXContainerItemProxy */;
 		};
-		5FAA764E6FC600FB9033BD936054F391 /* PBXTargetDependency */ = {
+		363DA4709DB32F8F07020EE488022A87 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = UILoader;
-			target = 2D8AC0D61FF1895B387110B44CB2B618 /* UILoader */;
-			targetProxy = 263226E5C858174A483E707D7AD807C8 /* PBXContainerItemProxy */;
+			name = Backgroundable;
+			target = A3B356AD6270E93901443BB648E9233B /* Backgroundable */;
+			targetProxy = EEB57B3D3A9C2A8C31AF83F9800CF72F /* PBXContainerItemProxy */;
 		};
-		8FDA506BCF535FE7269022242A5FF062 /* PBXTargetDependency */ = {
+		45C3116A3F74480FCEA2075AD674C1B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Defines;
+			target = 711EBEDF91EEDB7AEAA8238A46B306DB /* Defines */;
+			targetProxy = 4770DF46E94A0C1A3E618E575DFD3BEC /* PBXContainerItemProxy */;
+		};
+		6448BBB06E45954AF12A297F2DC6FCFC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MultiPicker;
-			target = 413A679AF781AE4765BC8FFB456AAA58 /* MultiPicker */;
-			targetProxy = B5AB58A4ED4E971100CCCE5AAFE5368C /* PBXContainerItemProxy */;
+			target = 29E920A34942495BBF6F6B2A1BA30611 /* MultiPicker */;
+			targetProxy = CF205991BC9D2EA8FB1CF97CEBF0A342 /* PBXContainerItemProxy */;
 		};
-		CD663A7FF4E608170D26CBB57F2D6E9C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = UILoader;
-			target = 2D8AC0D61FF1895B387110B44CB2B618 /* UILoader */;
-			targetProxy = 7CDDFDB0680E1A5E901A129947936D03 /* PBXContainerItemProxy */;
-		};
-		DCC5EFCCF476CE07995DCCAE3B3AAB48 /* PBXTargetDependency */ = {
+		7791DA761F96614839EB3896AA84783A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MultiPicker;
-			target = 413A679AF781AE4765BC8FFB456AAA58 /* MultiPicker */;
-			targetProxy = 97A01F282D85B2747C4256E9FE32F9EA /* PBXContainerItemProxy */;
+			target = 29E920A34942495BBF6F6B2A1BA30611 /* MultiPicker */;
+			targetProxy = 5AB42D8D6F31D737D1DA5DBB3E831687 /* PBXContainerItemProxy */;
+		};
+		7FF33737DDBF67230D14E17D95C3C525 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Permissionable;
+			target = 89320002F6659E20D6FD66197406C397 /* Permissionable */;
+			targetProxy = DC7271B4A7EC944F08449D4B5792F2A9 /* PBXContainerItemProxy */;
+		};
+		83E00DDD0CA4EACBE7AADEAA8A4E6C64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alertable;
+			target = 2E97A33CBDCE50C08224B84B5B291BF7 /* Alertable */;
+			targetProxy = EDA040C206FB5E709C24FAE101B53BDF /* PBXContainerItemProxy */;
+		};
+		927D11568A50F84E58E9C32BD69C4AE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Backgroundable;
+			target = A3B356AD6270E93901443BB648E9233B /* Backgroundable */;
+			targetProxy = 486078046ED48E00BA6D1B1E1A183C80 /* PBXContainerItemProxy */;
+		};
+		95AC8F32FA35D33DDA1514C7069BD3DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Permissionable;
+			target = 89320002F6659E20D6FD66197406C397 /* Permissionable */;
+			targetProxy = 170BCA8D5B422AC1D51D6EF7C27AD1DA /* PBXContainerItemProxy */;
+		};
+		970CCF6991A6E9930526562CC85AB30B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Defines;
+			target = 711EBEDF91EEDB7AEAA8238A46B306DB /* Defines */;
+			targetProxy = 1A194EBC0E85ED9A932DBDD017DBA821 /* PBXContainerItemProxy */;
+		};
+		B4082AEF09AC73E37562C0A67A23FA0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alertable;
+			target = 2E97A33CBDCE50C08224B84B5B291BF7 /* Alertable */;
+			targetProxy = D08C4DEECE775E0C515EB6DB4634A348 /* PBXContainerItemProxy */;
+		};
+		C8195B2A0187D220DE409915ACB88E91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alertable;
+			target = 2E97A33CBDCE50C08224B84B5B291BF7 /* Alertable */;
+			targetProxy = 1D8C67D66646A1DED223884485B3A281 /* PBXContainerItemProxy */;
+		};
+		DE7D6CCBBEE7457898A5F665BBD38004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Backgroundable;
+			target = A3B356AD6270E93901443BB648E9233B /* Backgroundable */;
+			targetProxy = 4BC57CCFE36D4C8BA4910884FCE4A4B1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		03F091158F425EDDB1748C1137472798 /* Release */ = {
+		0562796293F5101FE68620851A39EFBB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4FA7662DCB7992D85FE39CD3E83BB11 /* Pods-MultiPicker_Example.release.xcconfig */;
+			baseConfigurationReference = 68809EDFED3F91AACCBE37810543A272 /* Backgroundable.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -643,17 +984,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MultiPicker_Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Backgroundable/Backgroundable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Backgroundable/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MultiPicker_Example/Pods-MultiPicker_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Backgroundable/Backgroundable.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_MultiPicker_Example;
+				PRODUCT_NAME = Backgroundable;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -662,34 +1000,7 @@
 			};
 			name = Release;
 		};
-		32FF315E44F8CCD5E41B5AE377CE58D1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF7F37163CBC514082C2D712112A23F9 /* MultiPicker.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MultiPicker/MultiPicker-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MultiPicker/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MultiPicker/MultiPicker.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = MultiPicker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		3DF45EEE63CF226699F44842559FB342 /* Debug */ = {
+		076B7B097B5EA65A987F5CF45794B20D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8193D7344595092458E33C2026FB8B31 /* Pods-MultiPicker_Tests.debug.xcconfig */;
 			buildSettings = {
@@ -720,9 +1031,9 @@
 			};
 			name = Debug;
 		};
-		509F114A9254C44D48D8AA965F7F5DE9 /* Debug */ = {
+		1FA00672D8C9D3C1B91D1CD052E5EACC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF7F37163CBC514082C2D712112A23F9 /* MultiPicker.xcconfig */;
+			baseConfigurationReference = 8EFAF720509FF939C94A054E31DB6586 /* Defines.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -731,34 +1042,21 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MultiPicker/MultiPicker-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MultiPicker/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Defines/Defines-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Defines/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MultiPicker/MultiPicker.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = MultiPicker;
+				MODULEMAP_FILE = "Target Support Files/Defines/Defines.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Defines;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
-		};
-		569835E0F73A1285A1B5B97EAEA00129 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF7F37163CBC514082C2D712112A23F9 /* MultiPicker.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = MultiPicker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
+			name = Release;
 		};
 		5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -799,18 +1097,6 @@
 			};
 			name = Debug;
 		};
-		67DAB45F8C790A321547B9919B22A9E8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF7F37163CBC514082C2D712112A23F9 /* MultiPicker.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = MultiPicker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		74857149DC1E0D599B8A01A78349A926 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -845,9 +1131,9 @@
 			};
 			name = Release;
 		};
-		8570DF0C6101A625846CAE1151F400DE /* Release */ = {
+		76DD08960C22F750D31DABDE1FA3A06A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 107C1792AB24716536100B7BAC33355E /* Pods-MultiPicker_Tests.release.xcconfig */;
+			baseConfigurationReference = A471B703F59AE91260642E4F45F1D88D /* Permissionable.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -856,17 +1142,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MultiPicker_Tests/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Permissionable/Permissionable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Permissionable/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MultiPicker_Tests/Pods-MultiPicker_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Permissionable/Permissionable.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_MultiPicker_Tests;
+				PRODUCT_NAME = Permissionable;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -875,7 +1158,118 @@
 			};
 			name = Release;
 		};
-		9DCFF7210DB392627C979A06B9938F73 /* Debug */ = {
+		AEEC7F2DB609684A5164EB019D4C9644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A471B703F59AE91260642E4F45F1D88D /* Permissionable.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Permissionable/Permissionable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Permissionable/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Permissionable/Permissionable.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Permissionable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B52678EF99978A8C79EE7692D610086F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF7F37163CBC514082C2D712112A23F9 /* MultiPicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MultiPicker/MultiPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MultiPicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MultiPicker/MultiPicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MultiPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BD77F73B8ABDA2B4EF0E2141B804F90B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68809EDFED3F91AACCBE37810543A272 /* Backgroundable.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Backgroundable/Backgroundable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Backgroundable/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Backgroundable/Backgroundable.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Backgroundable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C69EC1E935849F95EA72ADF2F044E74B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF7F37163CBC514082C2D712112A23F9 /* MultiPicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MultiPicker/MultiPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MultiPicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MultiPicker/MultiPicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MultiPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CBF77186DF9ED63897ABB966A3706B3B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F9E9182E6240E9D9A4AE4045139D284A /* Pods-MultiPicker_Example.debug.xcconfig */;
 			buildSettings = {
@@ -906,9 +1300,9 @@
 			};
 			name = Debug;
 		};
-		B78C41BE20E0641F99863204E1893718 /* Release */ = {
+		D5B474EF50485A275DB0AD3CDC1763E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CD35A7A0B59C5972BDFA9E4F8BE6CEC /* UILoader.xcconfig */;
+			baseConfigurationReference = 339A1AA0960713160406225C69DCDA67 /* Alertable.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -917,41 +1311,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UILoader/UILoader-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UILoader/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Alertable/Alertable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alertable/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UILoader/UILoader.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = UILoader;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		BE5CEA955B19B1D7C3E7952B5A5ECE59 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CD35A7A0B59C5972BDFA9E4F8BE6CEC /* UILoader.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UILoader/UILoader-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UILoader/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UILoader/UILoader.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Alertable/Alertable.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = UILoader;
+				PRODUCT_NAME = Alertable;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -961,23 +1328,129 @@
 			};
 			name = Debug;
 		};
+		D64BAAC527B18D54553F4F2E74E16860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 339A1AA0960713160406225C69DCDA67 /* Alertable.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alertable/Alertable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alertable/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alertable/Alertable.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alertable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D76670AFE7BF0D9C8F7DD0B994611C8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 107C1792AB24716536100B7BAC33355E /* Pods-MultiPicker_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MultiPicker_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MultiPicker_Tests/Pods-MultiPicker_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MultiPicker_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D7A816DDAAED2A3AC7970E648FE2E0EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EFAF720509FF939C94A054E31DB6586 /* Defines.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Defines/Defines-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Defines/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Defines/Defines.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Defines;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E3DE4D2DF2E6E63507C2C9DDACF4A1B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4FA7662DCB7992D85FE39CD3E83BB11 /* Pods-MultiPicker_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MultiPicker_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MultiPicker_Example/Pods-MultiPicker_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MultiPicker_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		05577E3CB76D676BA4DAB8F084517385 /* Build configuration list for PBXNativeTarget "MultiPicker-MultiPicker" */ = {
+		2AF3A65252A8D9611C9778F3C2C763A1 /* Build configuration list for PBXNativeTarget "Defines" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				569835E0F73A1285A1B5B97EAEA00129 /* Debug */,
-				67DAB45F8C790A321547B9919B22A9E8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2D7DD46FCF2BE45DDCA0CDB36B2BF7F0 /* Build configuration list for PBXNativeTarget "MultiPicker" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				509F114A9254C44D48D8AA965F7F5DE9 /* Debug */,
-				32FF315E44F8CCD5E41B5AE377CE58D1 /* Release */,
+				D7A816DDAAED2A3AC7970E648FE2E0EF /* Debug */,
+				1FA00672D8C9D3C1B91D1CD052E5EACC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -991,29 +1464,56 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		536AC688D66B41E7F964BDAE256E786F /* Build configuration list for PBXNativeTarget "UILoader" */ = {
+		31F77851DF6F91E35F436FADBEA5C2F6 /* Build configuration list for PBXNativeTarget "MultiPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BE5CEA955B19B1D7C3E7952B5A5ECE59 /* Debug */,
-				B78C41BE20E0641F99863204E1893718 /* Release */,
+				C69EC1E935849F95EA72ADF2F044E74B /* Debug */,
+				B52678EF99978A8C79EE7692D610086F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		61F95C4F10693EF1AC8DC2731FE0CBB4 /* Build configuration list for PBXNativeTarget "Pods-MultiPicker_Tests" */ = {
+		9C6E9C608995CE8D4926113D9B15603C /* Build configuration list for PBXNativeTarget "Permissionable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3DF45EEE63CF226699F44842559FB342 /* Debug */,
-				8570DF0C6101A625846CAE1151F400DE /* Release */,
+				AEEC7F2DB609684A5164EB019D4C9644 /* Debug */,
+				76DD08960C22F750D31DABDE1FA3A06A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E0B367F8926F97B304BBA18FE6BAF7F5 /* Build configuration list for PBXNativeTarget "Pods-MultiPicker_Example" */ = {
+		AE6D9FB7E44833C120623C50B4D13175 /* Build configuration list for PBXNativeTarget "Pods-MultiPicker_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DCFF7210DB392627C979A06B9938F73 /* Debug */,
-				03F091158F425EDDB1748C1137472798 /* Release */,
+				076B7B097B5EA65A987F5CF45794B20D /* Debug */,
+				D76670AFE7BF0D9C8F7DD0B994611C8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5B5FA15D8F46DA45D872B83E5384044 /* Build configuration list for PBXNativeTarget "Backgroundable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD77F73B8ABDA2B4EF0E2141B804F90B /* Debug */,
+				0562796293F5101FE68620851A39EFBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD1ED9B31D3C43CECBBE98F7EC0582FD /* Build configuration list for PBXNativeTarget "Alertable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5B474EF50485A275DB0AD3CDC1763E1 /* Debug */,
+				D64BAAC527B18D54553F4F2E74E16860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E215B574758330BD870880514CBF5C15 /* Build configuration list for PBXNativeTarget "Pods-MultiPicker_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBF77186DF9ED63897ABB966A3706B3B /* Debug */,
+				E3DE4D2DF2E6E63507C2C9DDACF4A1B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

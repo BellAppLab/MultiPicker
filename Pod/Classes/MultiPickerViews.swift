@@ -36,12 +36,12 @@ class ListCell: UITableViewCell
 }
 
 
-class GridCell: UICollectionViewCell, UILoaderDelegate
+class GridCell: UICollectionViewCell
 {
     weak var asset: PHAsset!
     
-    @IBOutlet weak var selectedView: UIView?
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var selectedView: Checkmark?
+    @IBOutlet weak var imageView: ListImageView!
     
     @IBOutlet weak var spinningThing: UIActivityIndicatorView?
     var loader: UILoader?
@@ -51,23 +51,15 @@ class GridCell: UICollectionViewCell, UILoaderDelegate
             return super.selected
         }
         set {
-            if self.loader == nil {
-                self.loader = UILoader(delegate: self)
-            }
             super.selected = newValue
             self.selectedView?.hidden = !newValue
         }
-    }
-    
-    //MARK: Loader Delegate
-    func didChangeLoadingStatus(loading: Bool) {
-        
     }
 }
 
 
 //MARK: - Checkmark View
-@IBDesignable class Checkmark: UIView
+class Checkmark: UIView
 {
     @IBInspectable var borderWidth: CGFloat = 1
     @IBInspectable var checkmarkLineWidth: CGFloat = 1.2
@@ -88,6 +80,9 @@ class GridCell: UICollectionViewCell, UILoaderDelegate
     }
     
     private func setup() {
+        self.opaque = false
+        self.backgroundColor = UIColor.clearColor()
+        
         // Set shadow
         self.layer.shadowColor = UIColor.grayColor().CGColor
         self.layer.shadowOffset = CGSizeMake(0, 0)
@@ -96,6 +91,8 @@ class GridCell: UICollectionViewCell, UILoaderDelegate
     }
     
     override func drawRect(rect: CGRect) {
+        self.backgroundColor?.setFill()
+        
         // Border
         self.borderColor.setFill()
         UIBezierPath(ovalInRect: self.bounds).fill()

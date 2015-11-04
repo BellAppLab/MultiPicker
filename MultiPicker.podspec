@@ -16,11 +16,12 @@ An Image Picker View Controller for iOS that supports multiple images, multiple 
   s.platform     = :ios, '9.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'MultiPicker' => ['Pod/Assets/**/*']
-  }
+  s.module_name = 'MultiPicker'
+
+  s.source_files = 'Pod/Classes/*'
+  s.resource = 'Pod/Assets/*.{storyboard}'
 
   s.frameworks = 'UIKit', 'Photos'
-  s.dependency 'UILoader'
+  s.dependency 'Permissionable'
+  s.dependency 'Permissionable/Photos'
 end

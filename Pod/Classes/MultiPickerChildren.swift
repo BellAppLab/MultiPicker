@@ -1,5 +1,6 @@
 import UIKit
 import Photos
+import Permissionable
 
 
 //MARK: - Children
@@ -7,7 +8,7 @@ class AlbumList: UITableViewController, MultiPickerChild, PHPhotoLibraryChangeOb
 {
     //MARK: Data Model
     private var fetchResults: [PHFetchResult] = []
-    private var assetCollections: [PHAssetCollection]!
+    private var assetCollections: [PHAssetCollection]! = []
     
     private func updateAssetCollections()
     {
@@ -40,12 +41,15 @@ class AlbumList: UITableViewController, MultiPickerChild, PHPhotoLibraryChangeOb
         userAlbums.forEach { (album: PHAssetCollection) -> () in
             self.assetCollections.append(album)
         }
+        
+        self.tableView.reloadData()
     }
     
     //MARK: UI Elements
     @IBOutlet var doneBarButtonItem: UIBarButtonItem!
     @IBOutlet var cancelBarButtonItem: UIBarButtonItem!
     @IBOutlet var clearBarButtonItem: UIBarButtonItem!
+    @IBOutlet var placeholderView: UIView!
     
     //MARK: View Controller Life Cycle
     deinit {
@@ -58,10 +62,18 @@ class AlbumList: UITableViewController, MultiPickerChild, PHPhotoLibraryChangeOb
         self.navigationItem.title = NSLocalizedString("Photos", comment: "")
         self.navigationItem.prompt = self.multiPicker.prompt
         
-        self.fetchResults.append(PHAssetCollection.fetchAssetCollectionsWithType(.SmartAlbum, subtype: .Any, options: nil))
-        self.fetchResults.append(PHAssetCollection.fetchAssetCollectionsWithType(.Album, subtype: .Any, options: nil))
-        
-        PHPhotoLibrary.sharedPhotoLibrary().registerChangeObserver(self)
+        Permission.Photos.request(self) { [unowned self] (success) -> Void in
+            self.placeholderView.hidden = success
+            
+            if success {
+                self.fetchResults.append(PHAssetCollection.fetchAssetCollectionsWithType(.SmartAlbum, subtype: .Any, options: nil))
+                self.fetchResults.append(PHAssetCollection.fetchAssetCollectionsWithType(.Album, subtype: .Any, options: nil))
+                
+                PHPhotoLibrary.sharedPhotoLibrary().registerChangeObserver(self)
+                
+                self.updateAssetCollections()
+            }
+        }
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -77,31 +89,6 @@ class AlbumList: UITableViewController, MultiPickerChild, PHPhotoLibraryChangeOb
             controller.multiPicker = self.multiPicker
             controller.assetCollection = self.assetCollections[self.tableView.indexPathForSelectedRow!.row]
         }
-    }
-    
-    //MARK: Scroll View Delegate
-    private var scrolling = false
-    
-    override func scrollViewWillBeginDragging(scrollView: UIScrollView) {
-        self.scrolling = true
-    }
-    
-    override func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        if decelerate {
-            return
-        }
-        self.scrolling = false
-        self.updateVisibleCells()
-    }
-    
-    override func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-        self.scrolling = false
-        self.updateVisibleCells()
-    }
-    
-    override func scrollViewDidEndScrollingAnimation(scrollView: UIScrollView) {
-        self.scrolling = false
-        self.updateVisibleCells()
     }
     
     //MARK: Table View Data Source
@@ -123,49 +110,38 @@ class AlbumList: UITableViewController, MultiPickerChild, PHPhotoLibraryChangeOb
         return cell
     }
     
-    private func updateVisibleCells() {
-        if let visibleIndexPaths = self.tableView.indexPathsForVisibleRows {
-            for indexPath in visibleIndexPaths {
-                if let cell = self.tableView.cellForRowAtIndexPath(indexPath) as? ListCell {
-                    self.update(cell, indexPath)
-                }
-            }
-        }
-    }
-    
     private func update(cell: ListCell, _ indexPath: NSIndexPath) {
         // Thumbnail
         let assetCollection = self.assetCollections[indexPath.row]
         let options = PHFetchOptions()
         options.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
         options.predicate = NSPredicate(format: "mediaType == %ld", argumentArray: [PHAssetMediaType.Image.rawValue])
+        options.fetchLimit = 3
         
         let fetchResult = PHAsset.fetchAssetsInAssetCollection(assetCollection, options: options)
         
-        if !self.scrolling {
-            let manager = PHImageManager.defaultManager()
-            
-            func configureImageView(atIndex index: Int) {
-                if let imageView = cell.view(atIndex: index) {
-                    if fetchResult.count >= index {
-                        imageView.hidden = false
-                        
-                        manager.requestImageForAsset(fetchResult[fetchResult.count - index] as! PHAsset, targetSize: ScaledSize.make(imageView.frame.size), contentMode: .AspectFill, options: nil, resultHandler:
-                            { (result: UIImage?, info: [NSObject : AnyObject]?) -> Void in
-                                imageView.image = result
-                        })
-                    } else if fetchResult.count == 0 {
-                        imageView.hidden = false
-                        // Set placeholder image
-                        imageView.image = UIImage.placeholder(imageView.frame.size)
-                    }
+        let manager = PHImageManager.defaultManager()
+        
+        func configureImageView(var atIndex index: Int) {
+            if let imageView = cell.view(atIndex: index) {
+                if fetchResult.count >= ++index {
+                    imageView.hidden = false
+                    
+                    manager.requestImageForAsset(fetchResult[fetchResult.count - index] as! PHAsset, targetSize: ScaledSize.make(imageView.frame.size), contentMode: .AspectFill, options: nil, resultHandler:
+                        { (result: UIImage?, info: [NSObject : AnyObject]?) -> Void in
+                            imageView.image = result
+                    })
+                } else if fetchResult.count == 0 {
+                    imageView.hidden = false
+                    // Set placeholder image
+                    imageView.image = UIImage.placeholder(imageView.frame.size)
                 }
             }
-            
-            configureImageView(atIndex: 3)
-            configureImageView(atIndex: 2)
-            configureImageView(atIndex: 1)
         }
+        
+        configureImageView(atIndex: 2)
+        configureImageView(atIndex: 1)
+        configureImageView(atIndex: 0)
         
         // Album title
         cell.titleLabel.text = assetCollection.localizedTitle
@@ -185,7 +161,7 @@ class AlbumList: UITableViewController, MultiPickerChild, PHPhotoLibraryChangeOb
             self.doneBarButtonItem.enabled = self.multiPicker.doneButtonEnabled
             self.navigationItem.setRightBarButtonItem(self.doneBarButtonItem, animated: true)
             if self.multiPicker.showsCount {
-                self.setToolbarItems(defaultToolbarItems(defaultTitle(self.multiPicker.selected.count)), animated: true)
+                self.setToolbarItems(defaultToolbarItems(defaultTitle(self.multiPicker.picked.count)), animated: true)
             }
             return
         }
@@ -193,7 +169,7 @@ class AlbumList: UITableViewController, MultiPickerChild, PHPhotoLibraryChangeOb
         if self.multiPicker.clearButtonVisible {
             self.navigationItem.setLeftBarButtonItem(self.clearBarButtonItem, animated: true)
             if self.multiPicker.showsCount {
-                self.setToolbarItems(defaultToolbarItems(defaultTitle(self.multiPicker.selected.count)), animated: true)
+                self.setToolbarItems(defaultToolbarItems(defaultTitle(self.multiPicker.picked.count)), animated: true)
             }
             return
         }
@@ -231,7 +207,7 @@ class AlbumList: UITableViewController, MultiPickerChild, PHPhotoLibraryChangeOb
     }
     
     @IBAction func clearPressed(sender: UIBarButtonItem) {
-        self.multiPicker.clear()
+        self.multiPicker.clearPressed(sender)
         self.updateUI()
     }
 }
@@ -290,35 +266,23 @@ class AssetGrid: UICollectionViewController, MultiPickerChild, PHPhotoLibraryCha
         }
     }
     
+    override func updateViewConstraints() {
+        super.updateViewConstraints()
+        self.invalidateLayout()
+    }
+    
     override func viewWillDisappear(animated: Bool) {
         self.manager.stopCachingImagesForAllAssets()
         
         super.viewWillDisappear(animated)
     }
     
-    //MARK: Scroll View Delegate
-    private var scrolling = false
-    
-    override func scrollViewWillBeginDragging(scrollView: UIScrollView) {
-        self.scrolling = true
-    }
-    
-    override func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        if decelerate {
-            return
-        }
-        self.scrolling = false
-        self.updateVisibleCells()
-    }
-    
-    override func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-        self.scrolling = false
-        self.updateVisibleCells()
-    }
-    
-    override func scrollViewDidEndScrollingAnimation(scrollView: UIScrollView) {
-        self.scrolling = false
-        self.updateVisibleCells()
+    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        coordinator.animateAlongsideTransition({ [unowned self] (ctx: UIViewControllerTransitionCoordinatorContext) -> Void in
+            self.invalidateLayout()
+        }, completion: nil)
+        
+        super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
     }
     
     //MARK: Collection View Delegate
@@ -331,21 +295,21 @@ class AssetGrid: UICollectionViewController, MultiPickerChild, PHPhotoLibraryCha
     
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         if let cell = collectionView.cellForItemAtIndexPath(indexPath) as? GridCell {
-            cell.tag = self.multiPicker.add(cell.asset)
+            self.multiPicker.add(cell.asset)
             self.updateUI()
         }
     }
     
     override func collectionView(collectionView: UICollectionView, shouldDeselectItemAtIndexPath indexPath: NSIndexPath) -> Bool {
         if let cell = collectionView.cellForItemAtIndexPath(indexPath) as? GridCell {
-            return self.multiPicker.shouldRemove(assetAtIndex: cell.tag)
+            return self.multiPicker.shouldRemove(cell.asset)
         }
         return false
     }
     
     override func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
         if let cell = collectionView.cellForItemAtIndexPath(indexPath) as? GridCell {
-            cell.tag = self.multiPicker.remove(assetAtIndex: cell.tag)
+            self.multiPicker.remove(cell.asset)
             self.updateUI()
         }
     }
@@ -374,29 +338,7 @@ class AssetGrid: UICollectionViewController, MultiPickerChild, PHPhotoLibraryCha
         return cell
     }
     
-    private func updateVisibleCells() {
-        if let visibleIndexPaths = self.collectionView?.indexPathsForVisibleItems() {
-            for indexPath in visibleIndexPaths {
-                if let cell = self.collectionView?.cellForItemAtIndexPath(indexPath) as? GridCell {
-                    self.update(cell, indexPath)
-                }
-            }
-        }
-    }
-    
     private func update(cell: GridCell, _ indexPath: NSIndexPath) {
-        if self.scrolling {
-            if let loader = cell.loader {
-                if loader.loading {
-                    return
-                }
-            }
-            cell.loader?.loading = true
-            return
-        }
-        
-        cell.loader?.loading = false
-        
         // Image
         let asset = self.fetchResult[indexPath.item] as! PHAsset
         
@@ -406,35 +348,42 @@ class AssetGrid: UICollectionViewController, MultiPickerChild, PHPhotoLibraryCha
         }
         
         // Selection state
-        let selected = self.multiPicker.selected.contains { (item: (Int, PHAsset)) -> Bool in
-            let result = item.1 == asset
-            cell.tag = result ? item.0 : 0
-            return result
-        }
-        cell.selected = selected
-        if selected {
+        let exists = self.multiPicker.picked.contains(asset)
+        cell.selected = exists
+        cell.asset = asset
+        if exists {
             self.collectionView!.selectItemAtIndexPath(indexPath, animated: false, scrollPosition: .None)
         }
     }
     
     //MARK: Collection View Delegate Flow Layout
+    func invalidateLayout() {
+        self.collectionView?.collectionViewLayout.invalidateLayout()
+        self.currentItemSize = CGSizeZero
+    }
+    
+    private var currentItemSize = CGSizeZero
+    
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        var width = 120
-        var columns = 1
-        var result: CGFloat = 0
-        let spacing = Int(self.multiPicker.cellSpacing)
-        while width <= 60 {
-            result = CGFloat((width * columns) + ((columns + 1) * spacing))
-            while result <= collectionView.frame.size.width {
-                if result == collectionView.frame.size.width {
-                    return CGSizeMake(CGFloat(width), CGFloat(width))
-                }
-                columns++
+        if self.currentItemSize == CGSizeZero {
+            var width = 120
+            var columns = 1
+            var result: CGFloat = 0
+            let spacing = Int(self.multiPicker.cellSpacing)
+            while width >= 60 {
+                repeat {
+                    result = CGFloat((width * columns) + ((columns + 1) * spacing))
+                    if result == collectionView.frame.size.width {
+                        return CGSizeMake(CGFloat(width), CGFloat(width))
+                    }
+                    columns++
+                } while result <= collectionView.frame.size.width
+                width--
+                columns = 1
             }
-            width--
-            columns = 1
+            self.currentItemSize = CGSizeMake(CGFloat(width), CGFloat(width))
         }
-        return CGSizeMake(CGFloat(width), CGFloat(width))
+        return self.currentItemSize
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
@@ -456,12 +405,12 @@ class AssetGrid: UICollectionViewController, MultiPickerChild, PHPhotoLibraryCha
         if self.multiPicker.doneButtonVisible {
             self.doneBarButtonItem.enabled = self.multiPicker.doneButtonEnabled
             self.navigationItem.setRightBarButtonItem(self.doneBarButtonItem, animated: true)
-            self.setToolbarItems(defaultToolbarItems(defaultTitle(self.multiPicker.selected.count)), animated: true)
+            self.setToolbarItems(defaultToolbarItems(defaultTitle(self.multiPicker.picked.count)), animated: true)
             return
         }
         self.navigationItem.setRightBarButtonItem(nil, animated: true)
         if self.multiPicker.clearButtonVisible {
-            self.setToolbarItems(defaultToolbarItems(defaultTitle(self.multiPicker.selected.count)), animated: true)
+            self.setToolbarItems(defaultToolbarItems(defaultTitle(self.multiPicker.picked.count)), animated: true)
             return
         }
         self.setToolbarItems(nil, animated: true)
@@ -498,15 +447,6 @@ class AssetGrid: UICollectionViewController, MultiPickerChild, PHPhotoLibraryCha
     //MARK: Actions
     @IBAction func donePressed(sender: UIBarButtonItem) {
         self.multiPicker.donePressed(sender)
-    }
-    
-    @IBAction func cancelPressed(sender: UIBarButtonItem) {
-        self.multiPicker.cancelPressed(sender)
-    }
-    
-    @IBAction func clearPressed(sender: UIBarButtonItem) {
-        self.multiPicker.clear()
-        self.updateUI()
     }
 }
 

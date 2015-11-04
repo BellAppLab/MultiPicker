@@ -1,7 +1,24 @@
 PODS:
+  - Alertable (0.1.1)
+  - Backgroundable (0.2.2)
+  - Defines (0.3.0)
   - MultiPicker (0.1.0):
-    - UILoader
-  - UILoader (0.5.4)
+    - Permissionable
+    - Permissionable/Photos
+  - Permissionable (0.2.1):
+    - Alertable
+    - Backgroundable
+    - Defines
+    - Permissionable/Camera (= 0.2.1)
+    - Permissionable/Photos (= 0.2.1)
+  - Permissionable/Camera (0.2.1):
+    - Alertable
+    - Backgroundable
+    - Defines
+  - Permissionable/Photos (0.2.1):
+    - Alertable
+    - Backgroundable
+    - Defines
 
 DEPENDENCIES:
   - MultiPicker (from `../`)
@@ -11,7 +28,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MultiPicker: 696992f5082a2b31a675088b2051c1bbd6d1aee6
-  UILoader: 4168bf1f040643d234110e6aa9e9230f46ceb72f
+  Alertable: 0159596b5b8fb03f958898ddbe944447c0f156aa
+  Backgroundable: 58eb850598aa4aa0d6da564246c28da955730d4e
+  Defines: 43b157f1abcba4e5f1e9b522cf49be5e44d90be0
+  MultiPicker: 7ac1f0bbe893a3a3bb5d6c41cd08ad1db0ae5c9b
+  Permissionable: d552d807080b7a097300abacc0108385b0826df6
 
 COCOAPODS: 0.39.0

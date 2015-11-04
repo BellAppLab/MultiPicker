@@ -4,23 +4,26 @@ import Photos
 
 //MARK: Delegate
 /**
-    Multi Picker Delegate
+    MultiPickerable
 
-    This is how you get your pictures. :)
+    An object that can handle a MultiPicker.
+
+    @discussion This is how you get your pictures. :)
 */
-@objc public protocol MultiPickerDelegate: NSObjectProtocol
+@objc public protocol MultiPickerable: NSObjectProtocol
 {
     /**
      Did finish
      
      @params multiPicker: The MultiPicker instance calling its delegate
-     @discussion The MultiPicker only calls this method when its Cancel and Done buttons are visible (i.e. when it's being presented modally). You can access the selected assets by calling `multiPicker.selectedAssets`.
+     @discussion The MultiPicker only calls this method when its Cancel and Done buttons are visible (i.e. when it's being presented modally). You can access the selected assets by calling `multiPicker.picked`.
      */
     func didFinish(multiPicker: MultiPicker)
-    optional func multi(picker: MultiPicker, shouldSelectAsset asset: PHAsset) -> Bool
-    optional func multi(picker: MultiPicker, didSelect asset: PHAsset)
-    optional func multi(picker: MultiPicker, shouldDeselectAsset asset: PHAsset) -> Bool
-    optional func multi(picker: MultiPicker, didDeselect asset: PHAsset)
+    optional func multi(picker: MultiPicker, shouldSelectAsset asset: PHAsset, atIndex index: Int) -> Bool
+    optional func multi(picker: MultiPicker, didSelect asset: PHAsset, atIndex index: Int)
+    optional func multi(picker: MultiPicker, shouldDeselectAsset asset: PHAsset, atIndex index: Int) -> Bool
+    optional func multi(picker: MultiPicker, didDeselect asset: PHAsset, atIndex index: Int)
+    optional func didClear(multiPicker: MultiPicker)
 }
 
 
@@ -30,7 +33,7 @@ import Photos
  
     This is how you display the pictures. :)
  */
-public class MultiPicker: UIViewController
+public class MultiPicker: UINavigationController
 {
     //MARK: Validation
     public enum Error: ErrorType, CustomDebugStringConvertible
@@ -60,7 +63,7 @@ public class MultiPicker: UIViewController
         
         Set the delegate to get the pictures the user selects.
     */
-    @IBOutlet public weak var delegate: MultiPickerDelegate?
+    @IBOutlet public weak var able: MultiPickerable?
     
     //MARK: Setup
     /**
@@ -69,14 +72,26 @@ public class MultiPicker: UIViewController
         @params A delegate
         @discussion If you init the MultiPicker this way, we assume you're creating it programmatically and therefore you need the UI to be created for you.
     */
-    class func make(delegate: MultiPickerDelegate) -> MultiPicker?
+    public class func make(multiPickerable: MultiPickerable) -> MultiPicker?
     {
         var bundle = NSBundle(forClass: MultiPicker.self)
         if let path = bundle.pathForResource("MultiPicker", ofType: "bundle") {
             bundle = NSBundle(path: path)!
         }
         
-        return UIStoryboard(name: "MultiPicker", bundle: bundle).instantiateInitialViewController() as? MultiPicker
+        if let picker = UIStoryboard(name: "MultiPicker", bundle: bundle).instantiateInitialViewController() as? MultiPicker {
+            picker.able = multiPickerable
+            return picker
+        }
+        return nil
+    }
+    
+    override public func viewDidLoad() {
+        super.viewDidLoad()
+        
+        if let controller = self.topViewController as? AlbumList {
+            controller.multiPicker = self
+        }
     }
     
     override public func viewWillAppear(animated: Bool) {
@@ -143,7 +158,7 @@ public class MultiPicker: UIViewController
      
         The currently selected assets.
      */
-    public var selected: [Int: PHAsset] = [:]
+    public var picked: [PHAsset] = []
     
     //MARK: Private
     private func validate() throws {
@@ -169,33 +184,30 @@ public class MultiPicker: UIViewController
     }
     
     func shouldAdd(asset: PHAsset) -> Bool {
-        return self.selected.count < self.maximumItems && self.delegate?.multi?(self, shouldSelectAsset: asset) ?? true
+        return self.picked.count < self.maximumItems && self.able?.multi?(self, shouldSelectAsset: asset, atIndex: self.picked.count) ?? true
     }
     
-    func add(asset: PHAsset) -> Int {
-        let result = self.selected.count
-        self.selected.updateValue(asset, forKey: result)
-        self.delegate?.multi?(self, didSelect: asset)
-        return result
+    func add(asset: PHAsset) {
+        self.picked.append(asset)
+        self.able?.multi?(self, didSelect: asset, atIndex: self.picked.count - 1)
     }
     
     func clear() {
-        self.selected = [:]
+        self.picked = []
     }
     
-    func shouldRemove(assetAtIndex index: Int) -> Bool {
-        if let asset = self.selected[index] {
-            return self.delegate?.multi?(self, shouldDeselectAsset: asset) ?? true
+    func shouldRemove(asset: PHAsset) -> Bool {
+        if let index = self.picked.indexOf(asset) {
+            return self.able?.multi?(self, shouldDeselectAsset: asset, atIndex: index) ?? true
         }
         return false
     }
     
-    func remove(assetAtIndex index: Int) -> Int {
-        if let asset = self.selected[index] {
-            self.selected -= index
-            self.delegate?.multi?(self, didDeselect: asset)
+    func remove(asset: PHAsset) {
+        if let index = self.picked.indexOf(asset) {
+            self.picked.removeAtIndex(index)
+            self.able?.multi?(self, didDeselect: asset, atIndex: index)
         }
-        return 0
     }
     
     var doneButtonVisible: Bool {
@@ -207,22 +219,28 @@ public class MultiPicker: UIViewController
     }
     
     var doneButtonEnabled: Bool {
-        return self.doneButtonVisible && self.selected.count >= self.minimumItems
+        return self.doneButtonVisible && self.picked.count >= self.minimumItems
     }
     
     var clearButtonVisible: Bool {
-        return !self.doneButtonVisible && self.selected.count > 0
+        return !self.doneButtonVisible && self.picked.count > 0
     }
     
     //Actions
     func donePressed(sender: UIBarButtonItem) {
-        self.delegate?.didFinish(self)
+        self.able?.didFinish(self)
         self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
     
     func cancelPressed(sender: UIBarButtonItem) {
         self.clear()
+        self.able?.didFinish(self)
         self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func clearPressed(sender: UIBarButtonItem) {
+        self.clear()
+        self.able?.didClear?(self)
     }
 }
 
@@ -240,5 +258,19 @@ private func -=(inout lhs: [Int: PHAsset], var rhs: Int)
     lhs.removeValueForKey(rhs)
     while let item = lhs[rhs + 1] {
         lhs.updateValue(item, forKey: rhs++)
+    }
+    lhs.removeValueForKey(rhs)
+}
+
+internal extension Array
+{
+    func find(block: (Generator.Element) -> Bool) -> Generator.Element?
+    {
+        for e in self {
+            if block(e) {
+                return e
+            }
+        }
+        return nil
     }
 }
