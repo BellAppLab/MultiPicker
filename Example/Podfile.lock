@@ -1,14 +1,14 @@
 PODS:
-  - Alertable (0.1.1)
-  - Backgroundable (0.2.2)
+  - Alertable (0.2.1)
+  - Backgroundable (0.3.4)
   - Defines (0.3.0)
-  - MultiPicker (0.1.2):
+  - MultiPicker (0.2.0):
     - Permissionable/Photos
-  - Permissionable/Core (0.2.2):
+  - Permissionable/Core (0.3.1):
     - Alertable
     - Backgroundable
     - Defines
-  - Permissionable/Photos (0.2.2):
+  - Permissionable/Photos (0.3.1):
     - Permissionable/Core
 
 DEPENDENCIES:
@@ -19,10 +19,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Alertable: 0159596b5b8fb03f958898ddbe944447c0f156aa
-  Backgroundable: 58eb850598aa4aa0d6da564246c28da955730d4e
+  Alertable: 8cdfe3415b745bdb343f9509f6e6e9e1ca6c5b28
+  Backgroundable: 56acda5fe96303e5c62f36a13ff8601cc1b52d24
   Defines: 43b157f1abcba4e5f1e9b522cf49be5e44d90be0
-  MultiPicker: 9904202894267b71f66ecbd586676e7d96652cfc
-  Permissionable: d1b250abe1ada9118bfb4a0b07b9c79951341b28
+  MultiPicker: 8f45e818bfed17bb6b8803cd5af999327d3c0f7a
+  Permissionable: 070dd29b9a2d9caf257d03f878f13e86804dc6b1
 
 COCOAPODS: 0.39.0

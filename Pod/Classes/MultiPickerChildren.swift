@@ -62,7 +62,7 @@ class AlbumList: UITableViewController, MultiPickerChild, PHPhotoLibraryChangeOb
         self.navigationItem.title = NSLocalizedString("Photos", comment: "")
         self.navigationItem.prompt = self.multiPicker.prompt
         
-        Permission.Photos.request(self) { [unowned self] (success) -> Void in
+        Permissions.Photos.request(self) { [unowned self] (success) -> Void in
             self.placeholderView.hidden = success
             
             if success {

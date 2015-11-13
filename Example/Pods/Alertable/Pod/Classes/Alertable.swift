@@ -1,11 +1,43 @@
 import UIKit
 
 /*
+    Alertable
+    
+    Protocol that defines how to present an Alert.
+*/
+public protocol Alertable
+{
+    /*
+    Easily check if we're currently alerting the user.
+    */
+    var alerting: Bool { get }
+    
+    /*
+    Quickly present an alert to the user.
+    
+    @params alert: The alert to be presented.
+    @discussion This method assumes we're presenting the alert from the View Controller that stored within the Alert. See Alert's documentation for more details.
+    */
+    func alert(this alert: Alert)
+}
+
+public extension Alertable
+{
+    public var alerting: Bool {
+        return Alert.on
+    }
+    
+    public func alert(this alert: Alert) {
+        alert.show()
+    }
+}
+
+/*
     Alert
 
-    This is the main class that handles alerts on iOS.
+    This is the main struct that handles alerts on iOS.
 */
-public class Alert
+public struct Alert
 {
     //MARK: - Private
     private let controller: UIAlertController
@@ -19,7 +51,19 @@ public class Alert
         @params style: The Action's style. If no style is provided, `.Default` is assumed.
         @params handler: The Action's handler block. Optional.
     */
-    public typealias Action = (title: String?, style: UIAlertActionStyle?, handler: ((UIAlertAction) -> Void)?)
+    public class Action
+    {
+        public let title: String?
+        public let style: UIAlertActionStyle?
+        public let handler: ((UIAlertAction) -> Void)?
+        
+        public init(title: String?, style: UIAlertActionStyle?, handler: ((UIAlertAction) -> Void)?)
+        {
+            self.title = title
+            self.style = style
+            self.handler = handler
+        }
+    }
     
     /*
         Check this variable if you want to know whether the app is currently alerting the user or not.
@@ -88,7 +132,7 @@ public class Alert
         @params actions: You may provide Actions for the alert. Optional.
         @discussion If no actions are provided, a default 'Ok' action will be created.
     */
-    public class func show(message: String, _ title: String? = nil, _ sender: UIViewController? = nil, _ actions: [Action]? = nil)
+    public static func show(message: String, _ title: String? = nil, _ sender: UIViewController? = nil, _ actions: [Action]? = nil)
     {
         Alert(message, title, sender, actions).show()
     }
