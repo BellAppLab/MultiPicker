@@ -374,7 +374,8 @@ class AssetGrid: UICollectionViewController, MultiPickerChild, PHPhotoLibraryCha
                 repeat {
                     result = CGFloat((width * columns) + ((columns + 1) * spacing))
                     if result == collectionView.frame.size.width {
-                        return CGSizeMake(CGFloat(width), CGFloat(width))
+                        self.currentItemSize = CGSizeMake(CGFloat(width), CGFloat(width))
+                        return self.currentItemSize
                     }
                     columns++
                 } while result <= collectionView.frame.size.width

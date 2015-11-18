@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "MultiPicker"
-  s.version          = "0.2.0"
+  s.version          = "0.2.1"
   s.summary          = "An Image Picker View Controller for iOS."
 
   s.description      = <<-DESC
