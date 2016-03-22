@@ -253,11 +253,12 @@ internal protocol MultiPickerChild {
 
 
 //MARK: - Aux
-private func -=(inout lhs: [Int: PHAsset], var rhs: Int)
+private func -=(inout lhs: [Int: PHAsset], inout rhs: Int)
 {
     lhs.removeValueForKey(rhs)
     while let item = lhs[rhs + 1] {
-        lhs.updateValue(item, forKey: rhs++)
+        lhs.updateValue(item, forKey: rhs)
+        rhs += 1
     }
     lhs.removeValueForKey(rhs)
 }

@@ -1,7 +1,6 @@
 import UIKit
-import Alertable
-import Backgroundable
 import Defines
+import Alertable
 
 
 //MARK: - Main
@@ -48,7 +47,10 @@ public struct Permissions
             Permissions.request(Camera(), sender, nil, block)
         }
         
-        
+        public static func showError(sender: UIViewController, _ block: Permissions.Result?)
+        {
+            Permissions.showError(Camera(), sender: sender, block)
+        }
     }
     public class Photos: Permissionable
     {
@@ -56,10 +58,30 @@ public struct Permissions
         {
             Permissions.request(Photos(), sender, nil, block)
         }
+        
+        public static func showError(sender: UIViewController, _ block: Permissions.Result?)
+        {
+            Permissions.showError(Photos(), sender: sender, block)
+        }
     }
     
     public class Push: Permissionable
     {
+        public static var isThere: Bool {
+            if let result = Push().hasAccess() {
+                return result.boolValue
+            }
+            return false
+        }
+        
+        public static var hasAsked: Bool {
+            return Push().hasAccess() != nil
+        }
+        
+        @objc func hasAccess() -> NSNumber? {
+            return NSUserDefaults.isRegisteredForPush()
+        }
+        
         public static func request(sender: UIViewController, _ categories: Set<UIUserNotificationCategory>?, _ block: Result? = nil)
         {
             Permissions.request(Push(), sender, categories, block)
@@ -92,15 +114,13 @@ public struct Permissions
                     push.proceed(categories, block)
                     return
                 }
-                toMainThread {
+                dispatch_async(dispatch_get_main_queue()) { () -> Void in
                     block?(success: true)
                 }
                 return
             }
             //We've been denied access
-            if let privatePermission = PrivatePermission.privateFor(publicPermission: permission) {
-                Alert.show(privatePermission.message, privatePermission.title, sender, privatePermission.actions(block))
-            }
+            self.showError(permission, sender: sender, block)
             return
         }
         //We haven't asked for permissions yet
@@ -111,7 +131,7 @@ public struct Permissions
     {
         var result: [Alert.Action] = []
         result.append(Alert.Action(title: NSLocalizedString("No", comment: ""), style: .Destructive, handler: block == nil ? nil : { (UIAlertAction) -> Void in
-            toMainThread {
+            dispatch_async(dispatch_get_main_queue()) { () -> Void in
                 block!(success: false)
             }
         }))
@@ -151,11 +171,18 @@ public struct Permissions
         return result
     }
     
+    private static func showError(permission: Permissionable, sender: UIViewController, _ block: Permissions.Result?)
+    {
+        if let privatePermission = PrivatePermission.privateFor(publicPermission: permission) {
+            Alert.show(privatePermission.message, privatePermission.title, sender, privatePermission.actions(block))
+        }
+    }
+    
     //MARK: Push
     public static func didFinishRegisteringForPushNotifications(error: NSError?)
     {
         func finish(result: Bool) {
-            NSUserDefaults.setPushRegistration(result)
+            NSUserDefaults.setPushRegistration(NSNumber(bool: result))
             returnFromPush(result)
         }
         
@@ -258,16 +285,16 @@ internal enum PrivatePermission
     {
         var result: [Alert.Action] = []
         result.append(Alert.Action(title: NSLocalizedString("No", comment: ""), style: .Destructive, handler: block == nil ? nil : { (UIAlertAction) -> Void in
-            toMainThread {
+            dispatch_async(dispatch_get_main_queue()) { () -> Void in
                 block!(success: false)
             }
         }))
         result.append(Alert.Action(title: NSLocalizedString("Yes", comment: ""), style: .Default, handler: { (UIAlertAction) -> Void in
-            toMainThread {
+            dispatch_async(dispatch_get_main_queue()) { () -> Void in
                 UIApplication.sharedApplication().openURL(NSURL(string:UIApplicationOpenSettingsURLString)!)
             }
-            toMainThread {
-                block!(success: false)
+            dispatch_async(dispatch_get_main_queue()) { () -> Void in
+                block?(success: false)
             }
         }))
         return result
@@ -280,7 +307,7 @@ private func returnFromPush(result: Bool)
 {
     if let block = pushBlock {
         Alert.on = false
-        toMainThread {
+        dispatch_async(dispatch_get_main_queue()) { () -> Void in
             block(success: result)
         }
     }
@@ -294,12 +321,12 @@ private extension NSUserDefaults
         return Permissions.defaultsDomain() + ".PushKey"
     }
     
-    class func isRegisteredForPush() -> Bool?
+    class func isRegisteredForPush() -> NSNumber?
     {
-        return NSUserDefaults.standardUserDefaults().objectForKey(self.pushKey) as? Bool
+        return NSUserDefaults.standardUserDefaults().objectForKey(self.pushKey) as? NSNumber
     }
     
-    class func setPushRegistration(registered: Bool?)
+    class func setPushRegistration(registered: NSNumber?)
     {
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setObject(registered, forKey: self.pushKey)

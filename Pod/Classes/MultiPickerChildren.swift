@@ -122,9 +122,11 @@ class AlbumList: UITableViewController, MultiPickerChild, PHPhotoLibraryChangeOb
         
         let manager = PHImageManager.defaultManager()
         
-        func configureImageView(var atIndex index: Int) {
+        func configureImageView(atIndex i: Int) {
+            var index = i
             if let imageView = cell.view(atIndex: index) {
-                if fetchResult.count >= ++index {
+                index += 1
+                if fetchResult.count >= index {
                     imageView.hidden = false
                     
                     manager.requestImageForAsset(fetchResult[fetchResult.count - index] as! PHAsset, targetSize: ScaledSize.make(imageView.frame.size), contentMode: .AspectFill, options: nil, resultHandler:
@@ -182,7 +184,7 @@ class AlbumList: UITableViewController, MultiPickerChild, PHPhotoLibraryChangeOb
         var fetchResults: [PHFetchResult] = []
         fetchResults.appendContentsOf(self.fetchResults)
         dispatch_async(dispatch_get_main_queue(), { [unowned self] () -> Void in
-            for var i=0; i<self.fetchResults.count; i++ {
+            for i in 0 ..< self.fetchResults.count {
                 if let changeDetails = changeInstance.changeDetailsForFetchResult(self.fetchResults[i]) {
                     fetchResults[i] = changeDetails.fetchResultAfterChanges
                 }
@@ -377,9 +379,9 @@ class AssetGrid: UICollectionViewController, MultiPickerChild, PHPhotoLibraryCha
                         self.currentItemSize = CGSizeMake(CGFloat(width), CGFloat(width))
                         return self.currentItemSize
                     }
-                    columns++
+                    columns += 1
                 } while result <= collectionView.frame.size.width
-                width--
+                width -= 1
                 columns = 1
             }
             self.currentItemSize = CGSizeMake(CGFloat(width), CGFloat(width))

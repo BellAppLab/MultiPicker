@@ -1,10 +1,20 @@
 import Photos
 import Alertable
-import Backgroundable
 
 
 extension Permissions.Photos
 {
+    public static var isThere: Bool {
+        if let result = Permissions.Photos().hasAccess() {
+            return result.boolValue
+        }
+        return false
+    }
+    
+    public static var hasAsked: Bool {
+        return Permissions.Photos().hasAccess() != nil
+    }
+    
     @objc func hasAccess() -> NSNumber? {
         let status = PHPhotoLibrary.authorizationStatus()
         switch status
@@ -20,7 +30,7 @@ extension Permissions.Photos
             Alert.on = true
             PHPhotoLibrary.requestAuthorization { (status: PHAuthorizationStatus) -> Void in
                 Alert.on = false
-                toMainThread {
+                dispatch_async(dispatch_get_main_queue()) { () -> Void in
                     block?(success: status == .Authorized)
                 }
             }

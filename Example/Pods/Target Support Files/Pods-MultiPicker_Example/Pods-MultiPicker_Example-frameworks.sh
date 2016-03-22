@@ -85,14 +85,12 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-MultiPicker_Example/Alertable.framework"
-  install_framework "Pods-MultiPicker_Example/Backgroundable.framework"
   install_framework "Pods-MultiPicker_Example/Defines.framework"
   install_framework "Pods-MultiPicker_Example/MultiPicker.framework"
   install_framework "Pods-MultiPicker_Example/Permissionable.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-MultiPicker_Example/Alertable.framework"
-  install_framework "Pods-MultiPicker_Example/Backgroundable.framework"
   install_framework "Pods-MultiPicker_Example/Defines.framework"
   install_framework "Pods-MultiPicker_Example/MultiPicker.framework"
   install_framework "Pods-MultiPicker_Example/Permissionable.framework"
