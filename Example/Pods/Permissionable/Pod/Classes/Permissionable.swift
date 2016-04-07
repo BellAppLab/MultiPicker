@@ -64,6 +64,30 @@ public struct Permissions
             Permissions.showError(Photos(), sender: sender, block)
         }
     }
+    public class Location: Permissionable
+    {
+        public enum Kind {
+            case WhenInUse, Always
+        }
+        
+        public static func request(sender: UIViewController, kind: Kind, _ block: Result?)
+        {
+            Permissions.request(Location(kind), sender, nil, block)
+        }
+        
+        internal let kind: Kind
+        private init(_ kind: Kind) {
+            self.kind = kind
+        }
+        internal convenience init() {
+            self.init(.WhenInUse)
+        }
+        
+        public static func showError(sender: UIViewController, _ block: Permissions.Result?)
+        {
+            Permissions.showError(Location(), sender: sender, block)
+        }
+    }
     
     public class Push: Permissionable
     {
@@ -84,13 +108,21 @@ public struct Permissions
         
         public static func request(sender: UIViewController, _ categories: Set<UIUserNotificationCategory>?, _ block: Result? = nil)
         {
-            Permissions.request(Push(), sender, categories, block)
+            Permissions.request(Push(categories), sender, categories, block)
         }
         
-        private func proceed(categories: Set<UIUserNotificationCategory>? = nil, _ block: Result?)
+        private let categories: Set<UIUserNotificationCategory>?
+        private init(_ categories: Set<UIUserNotificationCategory>?) {
+            self.categories = categories
+        }
+        private convenience init() {
+            self.init(nil)
+        }
+        
+        private func proceed(block: Result?)
         {
             pushBlock = block
-            let settings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: categories)
+            let settings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: self.categories)
             let application = UIApplication.sharedApplication()
             application.registerUserNotificationSettings(settings)
             application.registerForRemoteNotifications()
@@ -111,7 +143,7 @@ public struct Permissions
             if access.boolValue { //No need to ask the user
                 if let push = permission as? Push {
                     //But in the case of push notifications, we still want to get a token fresh from the oven
-                    push.proceed(categories, block)
+                    push.proceed(block)
                     return
                 }
                 dispatch_async(dispatch_get_main_queue()) { () -> Void in
@@ -124,10 +156,10 @@ public struct Permissions
             return
         }
         //We haven't asked for permissions yet
-        Alert.show(permission.message, permission.title, sender, self.actions(permission, sender, categories, block))
+        Alert.show(permission.message, permission.title, sender, self.actions(permission, sender, block))
     }
     
-    private static func actions(permission: Permissionable, _ sender: UIViewController, _ categories: Set<UIUserNotificationCategory>? = nil, _ block: Result?) -> [Alert.Action]
+    private static func actions(permission: Permissionable, _ sender: UIViewController, _ block: Result?) -> [Alert.Action]
     {
         var result: [Alert.Action] = []
         result.append(Alert.Action(title: NSLocalizedString("No", comment: ""), style: .Destructive, handler: block == nil ? nil : { (UIAlertAction) -> Void in
@@ -143,8 +175,8 @@ public struct Permissions
                 result.append(action)
             }
             break
-        case is Photos:
-            let photosBlock = { (success: Bool) ->  Void in
+        case is Photos, is Location:
+            let block = { (success: Bool) ->  Void in
                 if !success {
                     if let privatePermission = PrivatePermission.privateFor(publicPermission: permission) {
                         Alert.show(privatePermission.message, privatePermission.title, sender, privatePermission.actions(block))
@@ -153,13 +185,13 @@ public struct Permissions
                 }
                 block?(success: true)
             }
-            if let action = permission.makeAction?(sender, photosBlock) as? Alert.Action {
+            if let action = permission.makeAction?(sender, block) as? Alert.Action {
                 result.append(action)
             }
             break
         case is Push:
             let pushBlock = { (success: Bool) ->  Void in
-                (permission as! Push).proceed(categories, block)
+                (permission as! Push).proceed(block)
             }
             if let action = permission.makeAction?(sender, pushBlock) as? Alert.Action {
                 result.append(action)
@@ -219,7 +251,7 @@ private extension Permissionable
     var title: String {
         switch self
         {
-        case is Permissions.Camera, is Permissions.Photos, is Permissions.Push: return NSLocalizedString("Please", comment: "Title for the alert that appears when we want to ask the user for permissions")
+        case is Permissions.Camera, is Permissions.Photos, is Permissions.Push, is Permissions.Location: return NSLocalizedString("Please", comment: "Title for the alert that appears when we want to ask the user for permissions")
         default: return ""
         }
     }
@@ -235,6 +267,7 @@ private extension Permissionable
         case is Permissions.Camera: return NSLocalizedString("Would you mind if we access your camera?", comment: "Message that asks the user for the camera")
         case is Permissions.Photos: return NSLocalizedString("Would you mind if we access your photos?", comment: "Message that asks the user for their photos")
         case is Permissions.Push: return NSLocalizedString("Would you mind if we send you push notifications?", comment: "Message that asks the user if we can send them push notifications")
+        case is Permissions.Location: return NSLocalizedString("Would you mind if we access your location?", comment: "Message that asks the user if we can access their location")
         default: return ""
         }
     }
@@ -248,11 +281,12 @@ internal enum PrivatePermission
         {
         case is Permissions.Camera: return .NoCamera
         case is Permissions.Photos: return .NoPhotos
+        case is Permissions.Location: return .NoLocation
         default: return nil
         }
     }
     
-    case NoCamera, NoPhotos
+    case NoCamera, NoPhotos, NoLocation
     
     /*
     These titles are presented when we're trying to get the user's permission.
@@ -262,7 +296,7 @@ internal enum PrivatePermission
     var title: String {
         switch self
         {
-        case .NoCamera, .NoPhotos: return NSLocalizedString("Uh oh", comment: "Title for the alert that appears when something went wrong")
+        case .NoCamera, .NoPhotos, .NoLocation: return NSLocalizedString("Uh oh", comment: "Title for the alert that appears when something went wrong")
         }
     }
     
@@ -278,6 +312,7 @@ internal enum PrivatePermission
         {
         case .NoCamera: return NSLocalizedString("Looks like we can't access the camera... Would you like to go to the Settings app to check?", comment: "Message that appears when we're having trouble accessing the camera")
         case .NoPhotos: return NSLocalizedString("Looks like we can't access your photos... Would you like to go to the Settings app to check?", comment: "Message that appears when we're having trouble accessing the user's photos")
+        case .NoLocation: return NSLocalizedString("Looks like we can't access your location... Would you like to go to the Settings app to check?", comment: "Message that appears when we're having trouble accessing the user's location")
         }
     }
     
