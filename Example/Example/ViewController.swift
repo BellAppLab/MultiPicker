@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import MultiPicker
 import Photos
 
 class ViewController: UIViewController, MultiPickerable {

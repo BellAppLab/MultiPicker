@@ -12,10 +12,11 @@
 		650759831DA7E8A400C31E1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 650759811DA7E8A400C31E1A /* Main.storyboard */; };
 		650759851DA7E8A400C31E1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 650759841DA7E8A400C31E1A /* Assets.xcassets */; };
 		650759881DA7E8A400C31E1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 650759861DA7E8A400C31E1A /* LaunchScreen.storyboard */; };
-		650759931DA7E8B100C31E1A /* MultiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650759901DA7E8B100C31E1A /* MultiPicker.swift */; };
-		650759941DA7E8B100C31E1A /* MultiPickerChildren.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650759911DA7E8B100C31E1A /* MultiPickerChildren.swift */; };
-		650759951DA7E8B100C31E1A /* MultiPickerViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650759921DA7E8B100C31E1A /* MultiPickerViews.swift */; };
-		650759981DA7E95200C31E1A /* MultiPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 650759971DA7E95200C31E1A /* MultiPicker.storyboard */; };
+		6530E1C01DA7EA780076A460 /* MultiPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6530E1BC1DA7EA780076A460 /* MultiPicker.storyboard */; };
+		6530E1C11DA7EA780076A460 /* MultiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6530E1BD1DA7EA780076A460 /* MultiPicker.swift */; };
+		6530E1C21DA7EA780076A460 /* MultiPickerChildren.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6530E1BE1DA7EA780076A460 /* MultiPickerChildren.swift */; };
+		6530E1C31DA7EA780076A460 /* MultiPickerViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6530E1BF1DA7EA780076A460 /* MultiPickerViews.swift */; };
+		6530E1C71DA7EA940076A460 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6530E1C61DA7EA940076A460 /* Photos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,11 +27,12 @@
 		650759841DA7E8A400C31E1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		650759871DA7E8A400C31E1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		650759891DA7E8A400C31E1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		650759901DA7E8B100C31E1A /* MultiPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiPicker.swift; sourceTree = "<group>"; };
-		650759911DA7E8B100C31E1A /* MultiPickerChildren.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiPickerChildren.swift; sourceTree = "<group>"; };
-		650759921DA7E8B100C31E1A /* MultiPickerViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiPickerViews.swift; sourceTree = "<group>"; };
-		650759961DA7E8C100C31E1A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
-		650759971DA7E95200C31E1A /* MultiPicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MultiPicker.storyboard; sourceTree = "<group>"; };
+		6530E1BC1DA7EA780076A460 /* MultiPicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MultiPicker.storyboard; sourceTree = "<group>"; };
+		6530E1BD1DA7EA780076A460 /* MultiPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiPicker.swift; sourceTree = "<group>"; };
+		6530E1BE1DA7EA780076A460 /* MultiPickerChildren.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiPickerChildren.swift; sourceTree = "<group>"; };
+		6530E1BF1DA7EA780076A460 /* MultiPickerViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiPickerViews.swift; sourceTree = "<group>"; };
+		6530E1C41DA7EA810076A460 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6530E1C61DA7EA940076A460 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6530E1C71DA7EA940076A460 /* Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,10 +50,11 @@
 		650759711DA7E8A400C31E1A = {
 			isa = PBXGroup;
 			children = (
-				650759961DA7E8C100C31E1A /* README.md */,
-				6507598F1DA7E8B100C31E1A /* Source */,
+				6530E1C41DA7EA810076A460 /* README.md */,
+				6530E1BB1DA7EA780076A460 /* Source */,
 				6507597C1DA7E8A400C31E1A /* Example */,
 				6507597B1DA7E8A400C31E1A /* Products */,
+				6530E1C51DA7EA940076A460 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,16 +79,24 @@
 			path = Example;
 			sourceTree = "<group>";
 		};
-		6507598F1DA7E8B100C31E1A /* Source */ = {
+		6530E1BB1DA7EA780076A460 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				650759971DA7E95200C31E1A /* MultiPicker.storyboard */,
-				650759901DA7E8B100C31E1A /* MultiPicker.swift */,
-				650759911DA7E8B100C31E1A /* MultiPickerChildren.swift */,
-				650759921DA7E8B100C31E1A /* MultiPickerViews.swift */,
+				6530E1BC1DA7EA780076A460 /* MultiPicker.storyboard */,
+				6530E1BD1DA7EA780076A460 /* MultiPicker.swift */,
+				6530E1BE1DA7EA780076A460 /* MultiPickerChildren.swift */,
+				6530E1BF1DA7EA780076A460 /* MultiPickerViews.swift */,
 			);
 			name = Source;
-			path = ../../Source;
+			path = ../Source;
+			sourceTree = "<group>";
+		};
+		6530E1C51DA7EA940076A460 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6530E1C61DA7EA940076A460 /* Photos.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +160,7 @@
 			files = (
 				650759881DA7E8A400C31E1A /* LaunchScreen.storyboard in Resources */,
 				650759851DA7E8A400C31E1A /* Assets.xcassets in Resources */,
-				650759981DA7E95200C31E1A /* MultiPicker.storyboard in Resources */,
+				6530E1C01DA7EA780076A460 /* MultiPicker.storyboard in Resources */,
 				650759831DA7E8A400C31E1A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,11 +172,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				650759951DA7E8B100C31E1A /* MultiPickerViews.swift in Sources */,
+				6530E1C31DA7EA780076A460 /* MultiPickerViews.swift in Sources */,
 				650759801DA7E8A400C31E1A /* ViewController.swift in Sources */,
 				6507597E1DA7E8A400C31E1A /* AppDelegate.swift in Sources */,
-				650759941DA7E8B100C31E1A /* MultiPickerChildren.swift in Sources */,
-				650759931DA7E8B100C31E1A /* MultiPicker.swift in Sources */,
+				6530E1C21DA7EA780076A460 /* MultiPickerChildren.swift in Sources */,
+				6530E1C11DA7EA780076A460 /* MultiPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +336,7 @@
 				6507598E1DA7E8A400C31E1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

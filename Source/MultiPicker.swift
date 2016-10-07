@@ -8,15 +8,15 @@ import Photos
 
     An object that can handle a MultiPicker.
 
-    @discussion This is how you get your pictures. :)
+    - discussion    This is how you get your pictures. :)
 */
 @objc public protocol MultiPickerable: NSObjectProtocol
 {
     /**
      Did finish
      
-     @params multiPicker: The MultiPicker instance calling its delegate
-     @discussion The MultiPicker only calls this method when its Cancel and Done buttons are visible (i.e. when it's being presented modally). You can access the selected assets by calling `multiPicker.picked`.
+     - param    multiPicker The MultiPicker instance calling its delegate
+     - discussion   The MultiPicker only calls this method when its Cancel and Done buttons are visible (i.e. when it's being presented modally). You can access the selected assets by calling `multiPicker.picked`.
      */
     func didFinish(multiPicker: MultiPicker)
     optional func multi(picker: MultiPicker, shouldSelectAsset asset: PHAsset, atIndex index: Int) -> Bool
@@ -38,9 +38,9 @@ public class MultiPicker: UINavigationController
     //MARK: Validation
     public enum Error: ErrorType, CustomDebugStringConvertible
     {
-        case MinimumItemsTooLow
-        case MinimumItemsTooHigh
-        case MaximumItemsTooLow
+        case minimumItemsTooLow
+        case minimumItemsTooHigh
+        case maximumItemsTooLow
         
         public var debugDescription: String {
 #if DEBUG
@@ -69,8 +69,8 @@ public class MultiPicker: UINavigationController
     /**
         Make with delegate
     
-        @params A delegate
-        @discussion If you init the MultiPicker this way, we assume you're creating it programmatically and therefore you need the UI to be created for you.
+        - param multiPickerable A delegate
+        - discussion    If you init the MultiPicker this way, we assume you're creating it programmatically and therefore you need the UI to be created for you.
     */
     public class func make(multiPickerable: MultiPickerable) -> MultiPicker?
     {
@@ -105,7 +105,7 @@ public class MultiPicker: UINavigationController
     
         Toggles the ability to select multiple assets.
     
-        @discussion It doesn't really make much sense to turn this off, since the Library is called MultiPicker, but still... Defaults to true.
+        - discussion    It doesn't really make much sense to turn this off, since the Library is called MultiPicker, but still... Defaults to true.
     */
     @IBInspectable public var multiple: Bool = true
     
@@ -253,7 +253,7 @@ internal protocol MultiPickerChild {
 
 
 //MARK: - Aux
-private func -=(inout lhs: [Int: PHAsset], inout rhs: Int)
+private func -=(lhs: inout [Int: PHAsset], rhs: inout Int)
 {
     lhs.removeValueForKey(rhs)
     while let item = lhs[rhs + 1] {
