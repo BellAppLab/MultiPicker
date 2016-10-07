@@ -1,28 +1,23 @@
 # MultiPicker
 
-[![CI Status](http://img.shields.io/travis/Bell App Lab/MultiPicker.svg?style=flat)](https://travis-ci.org/Bell App Lab/MultiPicker)
-[![Version](https://img.shields.io/cocoapods/v/MultiPicker.svg?style=flat)](http://cocoapods.org/pods/MultiPicker)
-[![License](https://img.shields.io/cocoapods/l/MultiPicker.svg?style=flat)](http://cocoapods.org/pods/MultiPicker)
-[![Platform](https://img.shields.io/cocoapods/p/MultiPicker.svg?style=flat)](http://cocoapods.org/pods/MultiPicker)
+An Image Picker View Controller for iOS that supports multiple images, multiple presentation styles, storyboards and rotation.
+
+_v0.5.0_
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
 
 ## Requirements
 
-iOS 8.0+
+* iOS 8.0+
+* Swift 3.0
 
 ## Installation
 
-### CocoaPods
+### Cocoapods
 
-MultiPicker is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod "MultiPicker"
-```
+Because of [this](http://stackoverflow.com/questions/39637123/cocoapods-app-xcworkspace-does-not-exists), I've dropped support for Cocoapods on this repo. I cannot have production code rely on a dependency manager that breaks this badly. 
 
 ### Git Submodules
 
@@ -34,7 +29,7 @@ To install MultiPicker using git submodules:
 
 ```
 cd toYourProjectsFolder
-git submodule add -b Submodule --name MultiPicker https://github.com/BellAppLab/MultiPicker.git
+git submodule add -b submodule --name MultiPicker https://github.com/BellAppLab/MultiPicker.git
 ```
 
 Navigate to the new MultiPicker folder and drag the Pods folder to your Xcode project.

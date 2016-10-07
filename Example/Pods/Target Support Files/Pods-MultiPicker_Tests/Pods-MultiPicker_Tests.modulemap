@@ -1,6 +1,0 @@
-framework module Pods_MultiPicker_Tests {
-  umbrella header "Pods-MultiPicker_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

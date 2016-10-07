@@ -1,6 +1,0 @@
-framework module Alertable {
-  umbrella header "Alertable-umbrella.h"
-
-  export *
-  module * { export * }
-}
